@@ -3,13 +3,13 @@
 #include <queue>
 #include <cstring>
 
-#define MAX_VALUE 1001
+#define MAX_VALUE 1001  // 정점 최대값
 
 using namespace std;
 
-int n, m, v;
-bool graph[MAX_VALUE][MAX_VALUE] = { false };
-bool visited[MAX_VALUE] = { 0 };
+int n, m, v;  // 정점 개수, 간선 개수, 시작점
+bool graph[MAX_VALUE][MAX_VALUE] = { false };  // 그래프 저장
+bool visited[MAX_VALUE] = { 0 };  // 방문 여부
 
 void dfs(int node) {
 	cout << node << ' ';
