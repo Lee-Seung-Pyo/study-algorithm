@@ -1,4 +1,6 @@
 # study-algorithm
+환경: C++14, Visual Studio 2019 version 16.4
+
 ### BFS, DFS
 [BOJ1260 DFS와 BFS](/src/BOJ1260)  
 [BOJ2667 단지번호붙이기](/src/BOJ2667)
