@@ -1,0 +1,8 @@
+## BOJ2178 - 미로 탐색
+문제: (https://www.acmicpc.net/problem/2178)
+
+미로탐색은 대표적인 BFS로 최단거리 찾기 문제이다.  
+
+depth를 저장하는 방법
+- 구조체를 만들어서 x, y, depth 멤버를 두거나
+- depth를 저장하는 행렬을 따로 만들거나

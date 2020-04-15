@@ -3,7 +3,8 @@
 
 ### BFS, DFS
 [BOJ1260 DFS와 BFS](/src/BOJ1260)  
-[BOJ2667 단지번호붙이기](/src/BOJ2667)
+[BOJ2667 단지번호붙이기](/src/BOJ2667)  
+[BOJ2178 미로 탐색](/src/BOJ2178)  
 
 
 ## C++ STL 컨테이너
