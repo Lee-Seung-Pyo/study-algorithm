@@ -7,7 +7,8 @@
 [BOJ2178 미로 탐색](/src/BOJ2178)  
 
 ### 동적 계획법(DP)
-[BOJ1003 피보나치 수열](/src/BOJ1003)
+[BOJ1003 피보나치 수열](/src/BOJ1003)  
+[BOJ2579 계단 오르기](/src/BOJ2579)  
 
 
 ## C++ STL 컨테이너
@@ -19,4 +20,4 @@
 활용: BFS
 
 <b>algorithm</b>  
-sort 존재
+sort, max/min 존재
