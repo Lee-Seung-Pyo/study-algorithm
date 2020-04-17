@@ -9,6 +9,7 @@
 ### 동적 계획법(DP)
 [BOJ1003 피보나치 수열](/src/BOJ1003)  
 [BOJ2579 계단 오르기](/src/BOJ2579)  
+[BOJ1463 1로 만들기](/src/BOJ1463)  
 
 
 ## C++ STL 컨테이너
@@ -21,3 +22,7 @@
 
 <b>algorithm</b>  
 sort, max/min 존재
+
+<b>climits (limits.h)</b>  
+기본 자료형의 최댓/최솟값 존재  
+ex) INT_MAX, INT_MIN
