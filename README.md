@@ -14,19 +14,24 @@
 ### 그리디
 [BOJ10610 30](/src/BOJ10610)  
 
+### 다익스트라 알고리즘
+[BOJ1753 최단경로](/src/BOJ1753)
 
 
 ## C++ STL 컨테이너
 <b>string</b>  
-문자배열. 생성자에서 동적할당하고 소멸자에서 해제한다.  
-begin(),end() 는 포인터 반환 / front(), back() 은 값 반환
+기존의 char[] 문자배열과 같지만 마지막이 '\0'으로 끝나지 않음. 생성자에서 동적할당하고 소멸자에서 해제한다.  
+begin(), end() 는 포인터 반환 / front(), back() 은 값 반환
 
 <b>vector</b>  
 자동으로 메모리가 할당되는 배열.  
 활용: 그래프 구현할 때 간선이 많으면 행렬, 적으면 vector로 구현
 
 <b>queue</b>  
-활용: BFS
+queue  
+활용: BFS  
+priory_queue  
+활용: 다익스트라
 
 <b>algorithm</b>  
 sort, max/min 존재

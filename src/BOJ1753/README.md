@@ -1,0 +1,28 @@
+## BOJ1753 - 최단경로
+문제: (https://www.acmicpc.net/problem/1753)
+
+다익스트라 알고리즘 구현문제  
+개념은 이해했는데 구현하는게 아직 어렵다. 특히 우선순위 큐 이용하는게 헷갈린다. 
+
+<b>주요 저장 변수 3개</b>
+```cpp
+vector<pair<int, int>> graph[MAX_V+1];  // graph[정점] = (정점, 비용)
+int dist[MAX_V + 1];  // start에서 각 노드까지 최소 비용
+priority_queue<pair<int, int>, vector<pair<int,int>>, greater<pair<int,int>>> pq;  // (start에서 정점까지 가는데 비용, 정점) 
+```
+
+<b>그래프 구현</b>  
+Vector 배열 vs 2차원 배열  
+30만\*2=60만 vs 2만\*2만=4억 <- 메모리사용량
+
+<b>배열 0 이외의 값으로 초기화</b>  
+std::fill_n(배열이름, 길이, 넣을 값)  
+```cpp
+int dist[MAX_V + 1];  // start에서 각 노드까지 최소 비용
+fill_n(dist, MAX_V + 1, INF);
+```
+혹은 벡터 배열로 만들 것
+```cpp
+vector<int> distance(vertex, INF);
+```
+\* memset은 byte 단위로 바꿔주기 때문에 0 초기화할 때만 사용
