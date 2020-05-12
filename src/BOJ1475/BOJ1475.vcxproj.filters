@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BOJ10808.cpp">
+    <ClCompile Include="BOJ1475.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

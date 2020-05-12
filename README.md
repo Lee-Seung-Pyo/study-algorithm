@@ -1,5 +1,6 @@
 # study-algorithm
-환경: C++14, Visual Studio 2019 version 16.4
+for preparing 'coding test'  
+환경: C++14, Visual Studio 2019 version 16.4  
 
 ### 완전 탐색 - BFS, DFS
 [BOJ1260 DFS와 BFS](/src/BOJ1260)  
@@ -23,7 +24,12 @@
 
 ## 자료구조
 #### 배열
-[BOJ10808 알파벳 개수](/src/BOJ10808)
+[BOJ10808 알파벳 개수](/src/BOJ10808)  
+[BOJ10807 개수 세기](/src/BOJ10807)  
+[BOJ11328 Strfry](/src/BOJ11328)  
+[BOJ13300 방 배정](/src/BOJ13300)  
+[BOJ1475 방 번호](/src/BOJ1475)  
+[BOJ1919 애너그램 만들기](/src/BOJ1919)  
 
 
 ## C++ STL 컨테이너
@@ -49,7 +55,23 @@ sort, max/min, fill 등 유용한 함수들 다수 존재
 기본 자료형의 최댓/최솟값 존재  
 ex) INT_MAX, INT_MIN
 
-## 기타
+## 기타  
+코딩테스트와 개발은 다르다. 코딩테스트를 위한 팁.  
+
+#### 기본 세팅  
+```cpp
+#include <bits/stdc++.h>
+#define endl '\n'
+using namespace std;
+
+int main() {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+
+	return 0;
+}
+```
+
 #### 입출력 속도 빠르게 하기
 (https://blog.encrypted.gg/923 표준입출력 참고)
 ```cpp
@@ -57,4 +79,29 @@ ex) INT_MAX, INT_MIN
 ...
 ios::sync_with_stdio(0);  // stdio출력버퍼와 싱크 해제, 원형은 (false)
 cin.tie(0);  // cin명령을 수행하기 전에 cout버퍼를 비우지 않음, 원형은 (nullptr)
+```
+
+#### N의 한계값에 따른 대략적인 허용 시간복잡도 유추  
+컴퓨터는 1초에 대략 3~5억개 정도의 연산을 처리할 수 있다.  
+N≤11 ⇒ O(N!)  
+<b>N≤25 ⇒ O(2^N^)</b>  
+N≤100 ⇒ O(N^4^)  
+N≤500 ⇒ O(N^3^)  
+N≤3,000 ⇒ O(N^2^logN)  
+<b>N≤5,000 ⇒ O(N^2^)</b>  
+<b>N≤1,000,000 ⇒ O(NlogN)</b>  
+<b>N≤10,000,000 ⇒ O(N)</b>  
+(어디까지나 참고만 할 것)  
+
+#### 실수 사용시 주의사항
+1. 오차가 발생할 수 밖에 없다.
+2. double에 long long 범위의 정수를 함부로 담으면 안된다.  
+\*double 유효숫자 15자리, long long 유효숫자 최대 19자리
+3. 등호를 사용하면 안된다.  
+\*`abs(a-b) < 1e-12` 와 같이 사용(`1e-12`: 10^-12^)  
+
+#### 공백을 포함한 문자열 입력  
+```cpp
+string s;
+getline(cin, s);  //std::getline()
 ```

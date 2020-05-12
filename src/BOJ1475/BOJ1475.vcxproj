@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{3B43D9AA-40DC-4E16-BB72-04FC70477173}</ProjectGuid>
-    <RootNamespace>BOJ10808</RootNamespace>
+    <ProjectGuid>{902B1F2A-2A91-44BB-81AD-0218608450DD}</ProjectGuid>
+    <RootNamespace>BOJ1475</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -138,7 +138,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BOJ10808.cpp" />
+    <ClCompile Include="BOJ1475.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
