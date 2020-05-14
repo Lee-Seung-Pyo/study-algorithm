@@ -1,6 +1,6 @@
 # study-algorithm
 for preparing 'coding test'  
-환경: C++14, Visual Studio 2019 version 16.4  
+환경: C++14, Visual Studio 2019 version 16.4 ~  
 
 ### 완전 탐색 - BFS, DFS
 [BOJ1260 DFS와 BFS](/src/BOJ1260)  
@@ -31,29 +31,36 @@ for preparing 'coding test'
 [BOJ1475 방 번호](/src/BOJ1475)  
 [BOJ1919 애너그램 만들기](/src/BOJ1919)  
 
+#### 연결 리스트  
+[BOJ1406 에디터](/src/BOJ1406)  
 
-## C++ STL 컨테이너
-자주 쓰이는 컨테이너들
+
+## C++ STL 컨테이너  
+자주 쓰이는 컨테이너들  
 #### \<string>  
 기존의 char[] 문자배열과 같지만 마지막이 '\0'으로 끝나지 않음. 생성자에서 동적할당하고 소멸자에서 해제한다.  
-begin(), end() 는 포인터 반환 / front(), back() 은 값 반환
+begin(), end() 는 포인터 반환 / front(), back() 은 값 반환  
 
-#### \<vector>
+#### \<vector>  
 자동으로 메모리가 할당되는 배열.  
-활용: 그래프 구현할 때 간선이 많으면 행렬, 적으면 vector로 구현
+활용: 그래프 구현할 때 간선이 많으면 행렬, 적으면 vector로 구현  
 
-#### \<queue>
+#### \<queue>  
 queue  
 활용: BFS  
 priory_queue  
-활용: 다익스트라
+활용: 다익스트라  
 
-#### \<algorithm>
-sort, max/min, fill 등 유용한 함수들 다수 존재
+#### \<algorithm>  
+sort, max/min, fill 등 유용한 함수들 다수 존재  
 
-#### \<climits> (\<limits.h>)
+#### \<climits> (\<limits.h>)  
 기본 자료형의 최댓/최솟값 존재  
-ex) INT_MAX, INT_MIN
+ex) INT_MAX, INT_MIN  
+
+#### \<list>  
+이중연결리스트  
+
 
 ## 기타  
 코딩테스트와 개발은 다르다. 코딩테스트를 위한 팁.  
@@ -92,6 +99,7 @@ N≤3,000 ⇒ O(N^2^logN)
 <b>N≤1,000,000 ⇒ O(NlogN)</b>  
 <b>N≤10,000,000 ⇒ O(N)</b>  
 (어디까지나 참고만 할 것)  
+\+공간복잡도: 512MB ⇒ 1.2억개의 int  
 
 #### 실수 사용시 주의사항
 1. 오차가 발생할 수 밖에 없다.
