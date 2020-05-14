@@ -1,5 +1,12 @@
 ## BOJ1406 - 에디터  
 (문제: https://www.acmicpc.net/problem/1406)  
 
+연결리스트  
 1. list 사용 - insert할 때 해당 iterator 앞에다 삽입함
-2. 야매 연결리스트 구현 - STL 못쓸때
+2. 야매 연결리스트 구현 - STL 못쓸때(배열로 구현, 삭제해도 메모리를 계속 점유하기 때문에 실무에선 x)  
+
+각 연산에 대해서  
+L: cursor가 begin()인지 체크  
+D: cursor가 end()인지 체크  
+B: cursor가 begin()인지 체크, 커서의 앞에꺼 지우고 커서 다시 원상복구  
+P: 없음, 커서의 앞에 삽입

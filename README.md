@@ -33,6 +33,8 @@ for preparing 'coding test'
 
 #### 연결 리스트  
 [BOJ1406 에디터](/src/BOJ1406)  
+[BOJ5397 키로거](/src/BOJ5397)  
+[BOJ1158 요세푸스 문제](/src/BOJ1158)  
 
 
 ## C++ STL 컨테이너  
