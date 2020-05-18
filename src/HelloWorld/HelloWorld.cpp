@@ -4,40 +4,31 @@ using namespace std;
 
 const int MX = 1000005;
 int dat[MX];
-int pos = 0;
+int head = 0, tail = 0;
 
 void push(int x) {
-	dat[pos] = x;
-	pos++;
+	dat[tail++] = x;
 }
 
 void pop() {
-	if (pos > 0) pos--;
+	head++;
 }
 
-int top() {
-	if (pos == 0) return NULL;
-	return dat[pos - 1];
+int front() {
+	return dat[head];
 }
 
-void printArr() {
-	for (int i = 0; i < pos; i++) cout << dat[i] << ' ';
-	cout << endl;
+int back() {
+	return dat[tail - 1];
 }
 
 void test() {
-	push(10);
-	printArr();
-	push(20);
-	printArr();
-	push(30);
-	printArr();
-	pop();
-	printArr();
-	cout << top();
+	
 }
 
 int main(void) {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
 	test();
 
 	return 0;
