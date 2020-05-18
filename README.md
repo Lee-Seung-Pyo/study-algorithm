@@ -36,6 +36,13 @@ for preparing 'coding test'
 [BOJ5397 키로거](/src/BOJ5397)  
 [BOJ1158 요세푸스 문제](/src/BOJ1158)  
 
+#### 스택  
+[BOJ10828 스택](/src/BOJ10828)  
+[BOJ10773 제로](/src/BOJ10773)  
+[BOJ1874 스택 수열](/src/BOJ1874)  
+[BOJ2493 탑](/src/BOJ2493)  
+[BOJ6198 옥상 정원 꾸미기](/src/BOJ6198)  
+
 
 ## C++ STL 컨테이너  
 자주 쓰이는 컨테이너들  
@@ -62,6 +69,9 @@ ex) INT_MAX, INT_MIN
 
 #### \<list>  
 이중연결리스트  
+
+#### \<stack>  
+스택  
 
 
 ## 기타  
