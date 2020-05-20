@@ -3,15 +3,23 @@
 using namespace std;
 
 const int MX = 1000005;
-int dat[MX];
-int head = 0, tail = 0;
+int dat[2 * MX + 1];
+int head = MX, tail = MX;
 
-void push(int x) {
+void push_front(int x) {
+	dat[--head] = x;
+}
+
+void push_back(int x) {
 	dat[tail++] = x;
 }
 
-void pop() {
+void pop_front() {
 	head++;
+}
+
+void pop_back() {
+	tail--;
 }
 
 int front() {
@@ -23,13 +31,18 @@ int back() {
 }
 
 void test() {
-	
+
 }
 
 int main(void) {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	test();
+	std::ostringstream oss;
+	int inta = 10;
+	std::string str = " test_string";
+	oss << "test " << inta << str << endl;
+	std::cout << oss.str();
+
 
 	return 0;
 }

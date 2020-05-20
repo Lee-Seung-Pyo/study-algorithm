@@ -48,6 +48,11 @@ for preparing 'coding test'
 [BOJ18258 큐2](/src/BOJ18258)  
 [BOJ2164 카드](/src/BOJ2164)  
 
+#### 덱
+[BOJ10866 덱](/src/BOJ10866)  
+[BOJ1021 회전하는 큐](/src/BOJ1021)  
+[BOJ5430 AC](/src/BOJ5430)  
+
 
 ## C++ STL 컨테이너  
 자주 쓰이는 컨테이너들  
@@ -77,6 +82,11 @@ ex) INT_MAX, INT_MIN
 
 #### \<stack>  
 스택  
+활용: 수식의 괄호 쌍, 전위/중위/후위 표기법, DFS, Flood Fill
+
+#### \<sstream>  
+문자열 다룰 때 유용  
+stringstream: 문자열에서 내가 원하는 자료형의 데이터를 추출할 때  
 
 
 ## 기타  
