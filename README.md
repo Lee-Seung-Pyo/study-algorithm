@@ -16,10 +16,11 @@ for preparing 'coding test'
 [BOJ10610 30](/src/BOJ10610)  
 
 ### 다익스트라 알고리즘
-[BOJ1753 최단경로](/src/BOJ1753)
+[BOJ1753 최단경로](/src/BOJ1753)  
 
 ### 구현
-[BOJ10871 X보다 작은 수](/src/BOJ10871)
+[BOJ10871 X보다 작은 수](/src/BOJ10871)  
+[BOJ2504 괄호의 값](/src/BOJ2504)  
 
 
 ## 자료구조
@@ -42,6 +43,11 @@ for preparing 'coding test'
 [BOJ1874 스택 수열](/src/BOJ1874)  
 [BOJ2493 탑](/src/BOJ2493)  
 [BOJ6198 옥상 정원 꾸미기](/src/BOJ6198)  
+[BOJ4949 균형잡힌 세상](/src/BOJ4949)  
+[BOJ10799 쇠막대기](/src/BOJ10799)  
+[BOJ2504 괄호의 값](/src/BOJ2504)  
+[BOJ9012 괄호](/src/BOJ9012)  
+[BOJ4889 안정적인 문자열](/src/BOJ4889)  
 
 #### 큐  
 [BOJ10845 큐](/src/BOJ10845)  
