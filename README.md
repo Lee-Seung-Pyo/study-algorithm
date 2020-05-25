@@ -6,6 +6,9 @@ for preparing 'coding test'
 [BOJ1260 DFS와 BFS](/src/BOJ1260)  
 [BOJ2667 단지번호붙이기](/src/BOJ2667)  
 [BOJ2178 미로 탐색](/src/BOJ2178)  
+[BOJ1926 그림](/src/BOJ1926)  
+[BOJ4179 불!](/src/BOJ4179)  
+
 
 ### 동적 계획법(DP)
 [BOJ1003 피보나치 수열](/src/BOJ1003)  
