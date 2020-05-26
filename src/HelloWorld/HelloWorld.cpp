@@ -2,14 +2,16 @@
 #define endl '\n'
 using namespace std;
 
+long long test(int a, int b, int m) {
+	long long val = 1;
+	while (b--) val *= a;
+	return val;
+}
+
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	int arr[10] = {};
-	fill(arr, arr + 10, 1);
-	cout << arr[0] << endl;
-	cout << arr[1] << endl;
-	cout << arr[2] << endl;
+	cout << test(6, 12, 5);
 
 	return 0;
 }

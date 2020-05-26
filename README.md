@@ -8,6 +8,7 @@ for preparing 'coding test'
 [BOJ2178 미로 탐색](/src/BOJ2178)  
 [BOJ1926 그림](/src/BOJ1926)  
 [BOJ4179 불!](/src/BOJ4179)  
+[BOJ1697 숨바꼭질](/src/BOJ1697)  
 
 
 ### 동적 계획법(DP)
