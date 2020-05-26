@@ -15,12 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BOJ1629.cpp">
+    <ClCompile Include="BOJ11729.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="README.md">
+    <None Include="READMD.md">
       <Filter>소스 파일</Filter>
     </None>
   </ItemGroup>

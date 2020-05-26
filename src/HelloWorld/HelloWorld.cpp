@@ -2,16 +2,19 @@
 #define endl '\n'
 using namespace std;
 
-long long test(int a, int b, int m) {
-	long long val = 1;
-	while (b--) val *= a;
-	return val;
-}
+struct H {
+	int a;
+	int b;
+	int c;
+};
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	cout << test(6, 12, 5);
+	H h = { 1,2,3 };
+	cout << h.a << endl;
+	cout << h.b << endl;
+	cout << h.c << endl;
 
 	return 0;
 }

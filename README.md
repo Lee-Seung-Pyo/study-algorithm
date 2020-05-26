@@ -10,6 +10,9 @@ for preparing 'coding test'
 [BOJ4179 불!](/src/BOJ4179)  
 [BOJ1697 숨바꼭질](/src/BOJ1697)  
 
+### 재귀  
+[BOJ1629 곱셈](/src/BOJ1629)  
+[BOJ11729 하노이 탑 이동 순서](/src/BOJ11729)  
 
 ### 동적 계획법(DP)
 [BOJ1003 피보나치 수열](/src/BOJ1003)  
