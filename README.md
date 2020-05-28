@@ -16,6 +16,7 @@ for preparing 'coding test'
 [BOJ1074 Z](/src/BOJ1074)  
 [BOJ2447 별 찍기 - 10](/src/BOJ2447)  
 [BOJ2448 별 찍기 - 11](/src/BOJ2448)  
+[BOJ1992 쿼드트리](/src/BOJ1992)  
 
 ### 동적 계획법(DP)
 [BOJ1003 피보나치 수열](/src/BOJ1003)  
