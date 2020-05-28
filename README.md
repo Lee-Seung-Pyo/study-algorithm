@@ -18,6 +18,9 @@ for preparing 'coding test'
 [BOJ2448 별 찍기 - 11](/src/BOJ2448)  
 [BOJ1992 쿼드트리](/src/BOJ1992)  
 
+### 백트래킹  
+[BOJ15649 N과 M (1)](/src/BOJ15649)  
+
 ### 동적 계획법(DP)
 [BOJ1003 피보나치 수열](/src/BOJ1003)  
 [BOJ2579 계단 오르기](/src/BOJ2579)  
