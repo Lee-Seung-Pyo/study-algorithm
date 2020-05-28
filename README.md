@@ -23,6 +23,10 @@ for preparing 'coding test'
 [BOJ15652 N과 M (4)](/src/BOJ15652)  
 [BOJ9663 N-Queen](/src/BOJ9663)  
 
+### 시뮬레이션  
+[BOJ1182 부분수열의 합](/src/BOJ1182)  
+
+
 ### 동적 계획법(DP)
 [BOJ1003 피보나치 수열](/src/BOJ1003)  
 [BOJ2579 계단 오르기](/src/BOJ2579)  
