@@ -26,6 +26,8 @@ for preparing 'coding test'
 ### 시뮬레이션  
 [BOJ1182 부분수열의 합](/src/BOJ1182)  
 
+### 정렬  
+[BOJ11728 배열 합치기](/src/BOJ11728)  
 
 ### 동적 계획법(DP)
 [BOJ1003 피보나치 수열](/src/BOJ1003)  
