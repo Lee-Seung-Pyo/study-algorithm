@@ -36,6 +36,7 @@ for preparing 'coding test'
 [BOJ1149 RGB거리](/src/BOJ1149)  
 [BOJ11726 2×n 타일링](/src/BOJ11726)  
 [BOJ1912 연속합](/src/BOJ1912)  
+[BOJ11053 가장 긴 증가하는 부분 수열](/src/BOJ11053)  
 
 ### 그리디
 [BOJ10610 30](/src/BOJ10610)  
