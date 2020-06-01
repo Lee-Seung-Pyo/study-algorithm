@@ -2,19 +2,20 @@
 #define endl '\n'
 using namespace std;
 
-struct H {
-	int a;
-	int b;
-	int c;
-};
+bool cmp(int a, int b) {
+	if (a<b) return true;
+	return false;
+}
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	H h = { 1,2,3 };
-	cout << h.a << endl;
-	cout << h.b << endl;
-	cout << h.c << endl;
+	int a[5] = { 5,3,1,4,2 };
+	sort(a, a + 5, [](int a, int b) {
+		if (a < b) return true;
+		return false;
+		});
+	for (auto e : a) cout << e << ' ';
 
 	return 0;
 }
