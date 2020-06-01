@@ -33,6 +33,8 @@ for preparing 'coding test'
 [BOJ1003 피보나치 수열](/src/BOJ1003)  
 [BOJ2579 계단 오르기](/src/BOJ2579)  
 [BOJ1463 1로 만들기](/src/BOJ1463)  
+[BOJ1149 RGB거리](/src/BOJ1149)  
+[BOJ11726 2×n 타일링](/src/BOJ11726)  
 
 ### 그리디
 [BOJ10610 30](/src/BOJ10610)  
