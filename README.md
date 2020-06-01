@@ -35,6 +35,7 @@ for preparing 'coding test'
 [BOJ1463 1로 만들기](/src/BOJ1463)  
 [BOJ1149 RGB거리](/src/BOJ1149)  
 [BOJ11726 2×n 타일링](/src/BOJ11726)  
+[BOJ1912 연속합](/src/BOJ1912)  
 
 ### 그리디
 [BOJ10610 30](/src/BOJ10610)  
