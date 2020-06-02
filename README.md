@@ -41,6 +41,7 @@ for preparing 'coding test'
 
 ### 그리디
 [BOJ10610 30](/src/BOJ10610.md)  
+[BOJ11047 동전 0](/src/BOJ11047.md)  
 
 ### 다익스트라 알고리즘
 [BOJ1753 최단경로](/src/BOJ1753.md)  
