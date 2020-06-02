@@ -3,88 +3,88 @@ for preparing 'coding test'
 환경: C++14, Visual Studio 2019 version 16.4 ~  
 
 ### 완전 탐색 - BFS, DFS
-[BOJ1260 DFS와 BFS](/src/BOJ1260)  
-[BOJ2667 단지번호붙이기](/src/BOJ2667)  
-[BOJ2178 미로 탐색](/src/BOJ2178)  
-[BOJ1926 그림](/src/BOJ1926)  
-[BOJ4179 불!](/src/BOJ4179)  
-[BOJ1697 숨바꼭질](/src/BOJ1697)  
+[BOJ1260 DFS와 BFS](/src/BOJ1260.md)  
+[BOJ2667 단지번호붙이기](/src/BOJ2667.md)  
+[BOJ2178 미로 탐색](/src/BOJ2178.md)  
+[BOJ1926 그림](/src/BOJ1926.md)  
+[BOJ4179 불!](/src/BOJ4179.md)  
+[BOJ1697 숨바꼭질](/src/BOJ1697.md)  
 
 ### 재귀  
-[BOJ1629 곱셈](/src/BOJ1629)  
-[BOJ11729 하노이 탑 이동 순서](/src/BOJ11729)  
-[BOJ1074 Z](/src/BOJ1074)  
-[BOJ2447 별 찍기 - 10](/src/BOJ2447)  
-[BOJ2448 별 찍기 - 11](/src/BOJ2448)  
-[BOJ1992 쿼드트리](/src/BOJ1992)  
+[BOJ1629 곱셈](/src/BOJ1629.md)  
+[BOJ11729 하노이 탑 이동 순서](/src/BOJ11729.md)  
+[BOJ1074 Z](/src/BOJ1074.md)  
+[BOJ2447 별 찍기 - 10](/src/BOJ2447.md)  
+[BOJ2448 별 찍기 - 11](/src/BOJ2448.md)  
+[BOJ1992 쿼드트리](/src/BOJ1992.md)  
 
 ### 백트래킹  
-[BOJ15649 N과 M (1)](/src/BOJ15649)  
-[BOJ15652 N과 M (4)](/src/BOJ15652)  
-[BOJ9663 N-Queen](/src/BOJ9663)  
+[BOJ15649 N과 M (1)](/src/BOJ15649.md)  
+[BOJ15652 N과 M (4)](/src/BOJ15652.md)  
+[BOJ9663 N-Queen](/src/BOJ9663.md)  
 
 ### 시뮬레이션  
-[BOJ1182 부분수열의 합](/src/BOJ1182)  
+[BOJ1182 부분수열의 합](/src/BOJ1182.md)  
 
 ### 정렬  
-[BOJ11728 배열 합치기](/src/BOJ11728)  
+[BOJ11728 배열 합치기](/src/BOJ11728.md)  
 
 ### 동적 계획법(DP)
-[BOJ1003 피보나치 수열](/src/BOJ1003)  
-[BOJ2579 계단 오르기](/src/BOJ2579)  
-[BOJ1463 1로 만들기](/src/BOJ1463)  
-[BOJ1149 RGB거리](/src/BOJ1149)  
-[BOJ11726 2×n 타일링](/src/BOJ11726)  
-[BOJ1912 연속합](/src/BOJ1912)  
-[BOJ11053 가장 긴 증가하는 부분 수열](/src/BOJ11053)  
-[BOJ2293 동전 1](/src/BOJ2293)  
+[BOJ1003 피보나치 수열](/src/BOJ1003.md)  
+[BOJ2579 계단 오르기](/src/BOJ2579.md)  
+[BOJ1463 1로 만들기](/src/BOJ1463.md)  
+[BOJ1149 RGB거리](/src/BOJ1149.md)  
+[BOJ11726 2×n 타일링](/src/BOJ11726.md)  
+[BOJ1912 연속합](/src/BOJ1912.md)  
+[BOJ11053 가장 긴 증가하는 부분 수열](/src/BOJ11053.md)  
+[BOJ2293 동전 1](/src/BOJ2293.md)  
 
 ### 그리디
-[BOJ10610 30](/src/BOJ10610)  
+[BOJ10610 30](/src/BOJ10610.md)  
 
 ### 다익스트라 알고리즘
-[BOJ1753 최단경로](/src/BOJ1753)  
+[BOJ1753 최단경로](/src/BOJ1753.md)  
 
 ### 구현
-[BOJ10871 X보다 작은 수](/src/BOJ10871)  
-[BOJ2504 괄호의 값](/src/BOJ2504)  
+[BOJ10871 X보다 작은 수](/src/BOJ10871.md)  
+[BOJ2504 괄호의 값](/src/BOJ2504.md)  
 
 
 ## 자료구조
 #### 배열
-[BOJ10808 알파벳 개수](/src/BOJ10808)  
-[BOJ10807 개수 세기](/src/BOJ10807)  
-[BOJ11328 Strfry](/src/BOJ11328)  
-[BOJ13300 방 배정](/src/BOJ13300)  
-[BOJ1475 방 번호](/src/BOJ1475)  
-[BOJ1919 애너그램 만들기](/src/BOJ1919)  
+[BOJ10808 알파벳 개수](/src/BOJ10808.md)  
+[BOJ10807 개수 세기](/src/BOJ10807.md)  
+[BOJ11328 Strfry](/src/BOJ11328.md)  
+[BOJ13300 방 배정](/src/BOJ13300.md)  
+[BOJ1475 방 번호](/src/BOJ1475.md)  
+[BOJ1919 애너그램 만들기](/src/BOJ1919.md)  
 
 #### 연결 리스트  
-[BOJ1406 에디터](/src/BOJ1406)  
-[BOJ5397 키로거](/src/BOJ5397)  
-[BOJ1158 요세푸스 문제](/src/BOJ1158)  
+[BOJ1406 에디터](/src/BOJ1406.md)  
+[BOJ5397 키로거](/src/BOJ5397.md)  
+[BOJ1158 요세푸스 문제](/src/BOJ1158.md)  
 
 #### 스택  
-[BOJ10828 스택](/src/BOJ10828)  
-[BOJ10773 제로](/src/BOJ10773)  
-[BOJ1874 스택 수열](/src/BOJ1874)  
-[BOJ2493 탑](/src/BOJ2493)  
-[BOJ6198 옥상 정원 꾸미기](/src/BOJ6198)  
-[BOJ4949 균형잡힌 세상](/src/BOJ4949)  
-[BOJ10799 쇠막대기](/src/BOJ10799)  
-[BOJ2504 괄호의 값](/src/BOJ2504)  
-[BOJ9012 괄호](/src/BOJ9012)  
-[BOJ4889 안정적인 문자열](/src/BOJ4889)  
+[BOJ10828 스택](/src/BOJ10828.md)  
+[BOJ10773 제로](/src/BOJ10773.md)  
+[BOJ1874 스택 수열](/src/BOJ1874.md)  
+[BOJ2493 탑](/src/BOJ2493.md)  
+[BOJ6198 옥상 정원 꾸미기](/src/BOJ6198.md)  
+[BOJ4949 균형잡힌 세상](/src/BOJ4949.md)  
+[BOJ10799 쇠막대기](/src/BOJ10799.md)  
+[BOJ2504 괄호의 값](/src/BOJ2504.md)  
+[BOJ9012 괄호](/src/BOJ9012.md)  
+[BOJ4889 안정적인 문자열](/src/BOJ4889.md)  
 
 #### 큐  
-[BOJ10845 큐](/src/BOJ10845)  
-[BOJ18258 큐2](/src/BOJ18258)  
-[BOJ2164 카드](/src/BOJ2164)  
+[BOJ10845 큐](/src/BOJ10845.md)  
+[BOJ18258 큐2](/src/BOJ18258.md)  
+[BOJ2164 카드](/src/BOJ2164.md)  
 
 #### 덱
-[BOJ10866 덱](/src/BOJ10866)  
-[BOJ1021 회전하는 큐](/src/BOJ1021)  
-[BOJ5430 AC](/src/BOJ5430)  
+[BOJ10866 덱](/src/BOJ10866.md)  
+[BOJ1021 회전하는 큐](/src/BOJ1021.md)  
+[BOJ5430 AC](/src/BOJ5430.md)  
 
 
 ## C++ STL 컨테이너  
