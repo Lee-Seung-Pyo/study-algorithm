@@ -1,8 +1,8 @@
-#include <bits/stdc++.h>
+ï»¿#include <bits/stdc++.h>
 #define endl '\n'
 using namespace std;
 
-//ÇÑ±ÛÇÑ±Û
+//í•œê¸€í•œê¸€
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
