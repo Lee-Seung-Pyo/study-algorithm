@@ -37,6 +37,7 @@ for preparing 'coding test'
 [BOJ11726 2×n 타일링](/src/BOJ11726)  
 [BOJ1912 연속합](/src/BOJ1912)  
 [BOJ11053 가장 긴 증가하는 부분 수열](/src/BOJ11053)  
+[BOJ2293 동전 1](/src/BOJ2293)  
 
 ### 그리디
 [BOJ10610 30](/src/BOJ10610)  
