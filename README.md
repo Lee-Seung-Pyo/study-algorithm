@@ -1,132 +1,135 @@
 # study-algorithm
 for preparing 'coding test'  
-È¯°æ: C++14, Visual Studio 2019 version 16.4 ~  
+í™˜ê²½: C++14, Visual Studio 2019 version 16.4 ~  
 
-### ¿ÏÀü Å½»ö - BFS, DFS
-[BOJ1260 DFS¿Í BFS](/src/BOJ1260.md)  
-[BOJ2667 ´ÜÁö¹øÈ£ºÙÀÌ±â](/src/BOJ2667.md)  
-[BOJ2178 ¹Ì·Î Å½»ö](/src/BOJ2178.md)  
-[BOJ1926 ±×¸²](/src/BOJ1926.md)  
-[BOJ4179 ºÒ!](/src/BOJ4179.md)  
-[BOJ1697 ¼û¹Ù²ÀÁú](/src/BOJ1697.md)  
+### ì™„ì „ íƒìƒ‰ - BFS, DFS
+[BOJ1260 DFSì™€ BFS](/src/BOJ1260.md)  
+[BOJ2667 ë‹¨ì§€ë²ˆí˜¸ë¶™ì´ê¸°](/src/BOJ2667.md)  
+[BOJ2178 ë¯¸ë¡œ íƒìƒ‰](/src/BOJ2178.md)  
+[BOJ1926 ê·¸ë¦¼](/src/BOJ1926.md)  
+[BOJ4179 ë¶ˆ!](/src/BOJ4179.md)  
+[BOJ1697 ìˆ¨ë°”ê¼­ì§ˆ](/src/BOJ1697.md)  
 
-### Àç±Í  
-[BOJ1629 °ö¼À](/src/BOJ1629.md)  
-[BOJ11729 ÇÏ³ëÀÌ Å¾ ÀÌµ¿ ¼ø¼­](/src/BOJ11729.md)  
+### ìž¬ê·€  
+[BOJ1629 ê³±ì…ˆ](/src/BOJ1629.md)  
+[BOJ11729 í•˜ë…¸ì´ íƒ‘ ì´ë™ ìˆœì„œ](/src/BOJ11729.md)  
 [BOJ1074 Z](/src/BOJ1074.md)  
-[BOJ2447 º° Âï±â - 10](/src/BOJ2447.md)  
-[BOJ2448 º° Âï±â - 11](/src/BOJ2448.md)  
-[BOJ1992 ÄõµåÆ®¸®](/src/BOJ1992.md)  
+[BOJ2447 ë³„ ì°ê¸° - 10](/src/BOJ2447.md)  
+[BOJ2448 ë³„ ì°ê¸° - 11](/src/BOJ2448.md)  
+[BOJ1992 ì¿¼ë“œíŠ¸ë¦¬](/src/BOJ1992.md)  
 
-### ¹éÆ®·¡Å·  
-[BOJ15649 N°ú M (1)](/src/BOJ15649.md)  
-[BOJ15652 N°ú M (4)](/src/BOJ15652.md)  
+### ë°±íŠ¸ëž˜í‚¹  
+[BOJ15649 Nê³¼ M (1)](/src/BOJ15649.md)  
+[BOJ15652 Nê³¼ M (4)](/src/BOJ15652.md)  
 [BOJ9663 N-Queen](/src/BOJ9663.md)  
 
-### ½Ã¹Ä·¹ÀÌ¼Ç  
-[BOJ1182 ºÎºÐ¼ö¿­ÀÇ ÇÕ](/src/BOJ1182.md)  
+### ì‹œë®¬ë ˆì´ì…˜  
+[BOJ1182 ë¶€ë¶„ìˆ˜ì—´ì˜ í•©](/src/BOJ1182.md)  
 
-### Á¤·Ä  
-[BOJ11728 ¹è¿­ ÇÕÄ¡±â](/src/BOJ11728.md)  
+### ì •ë ¬  
+[BOJ11728 ë°°ì—´ í•©ì¹˜ê¸°](/src/BOJ11728.md)  
 
-### µ¿Àû °èÈ¹¹ý(DP)
-[BOJ1003 ÇÇº¸³ªÄ¡ ¼ö¿­](/src/BOJ1003.md)  
-[BOJ2579 °è´Ü ¿À¸£±â](/src/BOJ2579.md)  
-[BOJ1463 1·Î ¸¸µé±â](/src/BOJ1463.md)  
-[BOJ1149 RGB°Å¸®](/src/BOJ1149.md)  
-[BOJ11726 2¡¿n Å¸ÀÏ¸µ](/src/BOJ11726.md)  
-[BOJ1912 ¿¬¼ÓÇÕ](/src/BOJ1912.md)  
-[BOJ11053 °¡Àå ±ä Áõ°¡ÇÏ´Â ºÎºÐ ¼ö¿­](/src/BOJ11053.md)  
-[BOJ2293 µ¿Àü 1](/src/BOJ2293.md)  
+### ë™ì  ê³„íšë²•(DP)
+[BOJ1003 í”¼ë³´ë‚˜ì¹˜ ìˆ˜ì—´](/src/BOJ1003.md)  
+[BOJ2579 ê³„ë‹¨ ì˜¤ë¥´ê¸°](/src/BOJ2579.md)  
+[BOJ1463 1ë¡œ ë§Œë“¤ê¸°](/src/BOJ1463.md)  
+[BOJ1149 RGBê±°ë¦¬](/src/BOJ1149.md)  
+[BOJ11726 2Ã—n íƒ€ì¼ë§](/src/BOJ11726.md)  
+[BOJ1912 ì—°ì†í•©](/src/BOJ1912.md)  
+[BOJ11053 ê°€ìž¥ ê¸´ ì¦ê°€í•˜ëŠ” ë¶€ë¶„ ìˆ˜ì—´](/src/BOJ11053.md)  
+[BOJ2293 ë™ì „ 1](/src/BOJ2293.md)  
 
-### ±×¸®µð
+### ê·¸ë¦¬ë””
 [BOJ10610 30](/src/BOJ10610.md)  
-[BOJ11047 µ¿Àü 0](/src/BOJ11047.md)  
+[BOJ11047 ë™ì „ 0](/src/BOJ11047.md)  
 
-### ´ÙÀÍ½ºÆ®¶ó ¾Ë°í¸®Áò
-[BOJ1753 ÃÖ´Ü°æ·Î](/src/BOJ1753.md)  
+### ìˆ˜í•™  
+[BOJ11653 ì†Œì¸ìˆ˜ë¶„í•´](/src/BOJ11653.md)  
 
-### ±¸Çö
-[BOJ10871 Xº¸´Ù ÀÛÀº ¼ö](/src/BOJ10871.md)  
-[BOJ2504 °ýÈ£ÀÇ °ª](/src/BOJ2504.md)  
+### ë‹¤ìµìŠ¤íŠ¸ë¼ ì•Œê³ ë¦¬ì¦˜
+[BOJ1753 ìµœë‹¨ê²½ë¡œ](/src/BOJ1753.md)  
+
+### êµ¬í˜„
+[BOJ10871 Xë³´ë‹¤ ìž‘ì€ ìˆ˜](/src/BOJ10871.md)  
+[BOJ2504 ê´„í˜¸ì˜ ê°’](/src/BOJ2504.md)  
 
 
-## ÀÚ·á±¸Á¶
-#### ¹è¿­
-[BOJ10808 ¾ËÆÄºª °³¼ö](/src/BOJ10808.md)  
-[BOJ10807 °³¼ö ¼¼±â](/src/BOJ10807.md)  
+## ìžë£Œêµ¬ì¡°
+#### ë°°ì—´
+[BOJ10808 ì•ŒíŒŒë²³ ê°œìˆ˜](/src/BOJ10808.md)  
+[BOJ10807 ê°œìˆ˜ ì„¸ê¸°](/src/BOJ10807.md)  
 [BOJ11328 Strfry](/src/BOJ11328.md)  
-[BOJ13300 ¹æ ¹èÁ¤](/src/BOJ13300.md)  
-[BOJ1475 ¹æ ¹øÈ£](/src/BOJ1475.md)  
-[BOJ1919 ¾Ö³Ê±×·¥ ¸¸µé±â](/src/BOJ1919.md)  
+[BOJ13300 ë°© ë°°ì •](/src/BOJ13300.md)  
+[BOJ1475 ë°© ë²ˆí˜¸](/src/BOJ1475.md)  
+[BOJ1919 ì• ë„ˆê·¸ëž¨ ë§Œë“¤ê¸°](/src/BOJ1919.md)  
 
-#### ¿¬°á ¸®½ºÆ®  
-[BOJ1406 ¿¡µðÅÍ](/src/BOJ1406.md)  
-[BOJ5397 Å°·Î°Å](/src/BOJ5397.md)  
-[BOJ1158 ¿ä¼¼Çª½º ¹®Á¦](/src/BOJ1158.md)  
+#### ì—°ê²° ë¦¬ìŠ¤íŠ¸  
+[BOJ1406 ì—ë””í„°](/src/BOJ1406.md)  
+[BOJ5397 í‚¤ë¡œê±°](/src/BOJ5397.md)  
+[BOJ1158 ìš”ì„¸í‘¸ìŠ¤ ë¬¸ì œ](/src/BOJ1158.md)  
 
-#### ½ºÅÃ  
-[BOJ10828 ½ºÅÃ](/src/BOJ10828.md)  
-[BOJ10773 Á¦·Î](/src/BOJ10773.md)  
-[BOJ1874 ½ºÅÃ ¼ö¿­](/src/BOJ1874.md)  
-[BOJ2493 Å¾](/src/BOJ2493.md)  
-[BOJ6198 ¿Á»ó Á¤¿ø ²Ù¹Ì±â](/src/BOJ6198.md)  
-[BOJ4949 ±ÕÇüÀâÈù ¼¼»ó](/src/BOJ4949.md)  
-[BOJ10799 ¼è¸·´ë±â](/src/BOJ10799.md)  
-[BOJ2504 °ýÈ£ÀÇ °ª](/src/BOJ2504.md)  
-[BOJ9012 °ýÈ£](/src/BOJ9012.md)  
-[BOJ4889 ¾ÈÁ¤ÀûÀÎ ¹®ÀÚ¿­](/src/BOJ4889.md)  
+#### ìŠ¤íƒ  
+[BOJ10828 ìŠ¤íƒ](/src/BOJ10828.md)  
+[BOJ10773 ì œë¡œ](/src/BOJ10773.md)  
+[BOJ1874 ìŠ¤íƒ ìˆ˜ì—´](/src/BOJ1874.md)  
+[BOJ2493 íƒ‘](/src/BOJ2493.md)  
+[BOJ6198 ì˜¥ìƒ ì •ì› ê¾¸ë¯¸ê¸°](/src/BOJ6198.md)  
+[BOJ4949 ê· í˜•ìž¡ížŒ ì„¸ìƒ](/src/BOJ4949.md)  
+[BOJ10799 ì‡ ë§‰ëŒ€ê¸°](/src/BOJ10799.md)  
+[BOJ2504 ê´„í˜¸ì˜ ê°’](/src/BOJ2504.md)  
+[BOJ9012 ê´„í˜¸](/src/BOJ9012.md)  
+[BOJ4889 ì•ˆì •ì ì¸ ë¬¸ìžì—´](/src/BOJ4889.md)  
 
-#### Å¥  
-[BOJ10845 Å¥](/src/BOJ10845.md)  
-[BOJ18258 Å¥2](/src/BOJ18258.md)  
-[BOJ2164 Ä«µå](/src/BOJ2164.md)  
+#### í  
+[BOJ10845 í](/src/BOJ10845.md)  
+[BOJ18258 í2](/src/BOJ18258.md)  
+[BOJ2164 ì¹´ë“œ](/src/BOJ2164.md)  
 
-#### µ¦
-[BOJ10866 µ¦](/src/BOJ10866.md)  
-[BOJ1021 È¸ÀüÇÏ´Â Å¥](/src/BOJ1021.md)  
+#### ë±
+[BOJ10866 ë±](/src/BOJ10866.md)  
+[BOJ1021 íšŒì „í•˜ëŠ” í](/src/BOJ1021.md)  
 [BOJ5430 AC](/src/BOJ5430.md)  
 
 
-## C++ STL ÄÁÅ×ÀÌ³Ê  
-ÀÚÁÖ ¾²ÀÌ´Â ÄÁÅ×ÀÌ³Êµé  
+## C++ STL ì»¨í…Œì´ë„ˆ  
+ìžì£¼ ì“°ì´ëŠ” ì»¨í…Œì´ë„ˆë“¤  
 #### \<string>  
-±âÁ¸ÀÇ char[] ¹®ÀÚ¹è¿­°ú °°Áö¸¸ ¸¶Áö¸·ÀÌ '\0'À¸·Î ³¡³ªÁö ¾ÊÀ½. »ý¼ºÀÚ¿¡¼­ µ¿ÀûÇÒ´çÇÏ°í ¼Ò¸êÀÚ¿¡¼­ ÇØÁ¦ÇÑ´Ù.  
-begin(), end() ´Â Æ÷ÀÎÅÍ ¹ÝÈ¯ / front(), back() Àº °ª ¹ÝÈ¯  
+ê¸°ì¡´ì˜ char[] ë¬¸ìžë°°ì—´ê³¼ ê°™ì§€ë§Œ ë§ˆì§€ë§‰ì´ '\0'ìœ¼ë¡œ ëë‚˜ì§€ ì•ŠìŒ. ìƒì„±ìžì—ì„œ ë™ì í• ë‹¹í•˜ê³  ì†Œë©¸ìžì—ì„œ í•´ì œí•œë‹¤.  
+begin(), end() ëŠ” í¬ì¸í„° ë°˜í™˜ / front(), back() ì€ ê°’ ë°˜í™˜  
 
 #### \<vector>  
-ÀÚµ¿À¸·Î ¸Þ¸ð¸®°¡ ÇÒ´çµÇ´Â ¹è¿­.  
-È°¿ë: ±×·¡ÇÁ ±¸ÇöÇÒ ¶§ °£¼±ÀÌ ¸¹À¸¸é Çà·Ä, ÀûÀ¸¸é vector·Î ±¸Çö  
+ìžë™ìœ¼ë¡œ ë©”ëª¨ë¦¬ê°€ í• ë‹¹ë˜ëŠ” ë°°ì—´.  
+í™œìš©: ê·¸ëž˜í”„ êµ¬í˜„í•  ë•Œ ê°„ì„ ì´ ë§Žìœ¼ë©´ í–‰ë ¬, ì ìœ¼ë©´ vectorë¡œ êµ¬í˜„  
 
 #### \<queue>  
 queue  
-È°¿ë: BFS  
+í™œìš©: BFS  
 priory_queue  
-È°¿ë: ´ÙÀÍ½ºÆ®¶ó  
+í™œìš©: ë‹¤ìµìŠ¤íŠ¸ë¼  
 
 #### \<algorithm>  
-sort, max/min, fill µî À¯¿ëÇÑ ÇÔ¼öµé ´Ù¼ö Á¸Àç  
+sort, max/min, fill ë“± ìœ ìš©í•œ í•¨ìˆ˜ë“¤ ë‹¤ìˆ˜ ì¡´ìž¬  
 
 #### \<climits> (\<limits.h>)  
-±âº» ÀÚ·áÇüÀÇ ÃÖ´ñ/ÃÖ¼Ú°ª Á¸Àç  
+ê¸°ë³¸ ìžë£Œí˜•ì˜ ìµœëŒ“/ìµœì†Ÿê°’ ì¡´ìž¬  
 ex) INT_MAX, INT_MIN  
 
 #### \<list>  
-ÀÌÁß¿¬°á¸®½ºÆ®  
+ì´ì¤‘ì—°ê²°ë¦¬ìŠ¤íŠ¸  
 
 #### \<stack>  
-½ºÅÃ  
-È°¿ë: ¼ö½ÄÀÇ °ýÈ£ ½Ö, ÀüÀ§/ÁßÀ§/ÈÄÀ§ Ç¥±â¹ý, DFS, Flood Fill
+ìŠ¤íƒ  
+í™œìš©: ìˆ˜ì‹ì˜ ê´„í˜¸ ìŒ, ì „ìœ„/ì¤‘ìœ„/í›„ìœ„ í‘œê¸°ë²•, DFS, Flood Fill
 
 #### \<sstream>  
-¹®ÀÚ¿­ ´Ù·ê ¶§ À¯¿ë  
-stringstream: ¹®ÀÚ¿­¿¡¼­ ³»°¡ ¿øÇÏ´Â ÀÚ·áÇüÀÇ µ¥ÀÌÅÍ¸¦ ÃßÃâÇÒ ¶§  
+ë¬¸ìžì—´ ë‹¤ë£° ë•Œ ìœ ìš©  
+stringstream: ë¬¸ìžì—´ì—ì„œ ë‚´ê°€ ì›í•˜ëŠ” ìžë£Œí˜•ì˜ ë°ì´í„°ë¥¼ ì¶”ì¶œí•  ë•Œ  
 
 
-## ±âÅ¸  
-ÄÚµùÅ×½ºÆ®¿Í °³¹ßÀº ´Ù¸£´Ù. ÄÚµùÅ×½ºÆ®¸¦ À§ÇÑ ÆÁ.  
+## ê¸°íƒ€  
+ì½”ë”©í…ŒìŠ¤íŠ¸ì™€ ê°œë°œì€ ë‹¤ë¥´ë‹¤. ì½”ë”©í…ŒìŠ¤íŠ¸ë¥¼ ìœ„í•œ íŒ.  
 
-#### ±âº» ¼¼ÆÃ  
+#### ê¸°ë³¸ ì„¸íŒ…  
 ```cpp
 #include <bits/stdc++.h>
 #define endl '\n'
@@ -140,36 +143,36 @@ int main() {
 }
 ```
 
-#### ÀÔÃâ·Â ¼Óµµ ºü¸£°Ô ÇÏ±â
-(https://blog.encrypted.gg/923 Ç¥ÁØÀÔÃâ·Â Âü°í)
+#### ìž…ì¶œë ¥ ì†ë„ ë¹ ë¥´ê²Œ í•˜ê¸°
+(https://blog.encrypted.gg/923 í‘œì¤€ìž…ì¶œë ¥ ì°¸ê³ )
 ```cpp
-#define endl '\n'  // endlÀº '°³Çà+Ãâ·Â¹öÆÛ ºñ¿ì±â' ÀÌ¹Ç·Î »ç¿ëx
+#define endl '\n'  // endlì€ 'ê°œí–‰+ì¶œë ¥ë²„í¼ ë¹„ìš°ê¸°' ì´ë¯€ë¡œ ì‚¬ìš©x
 ...
-ios::sync_with_stdio(0);  // stdioÃâ·Â¹öÆÛ¿Í ½ÌÅ© ÇØÁ¦, ¿øÇüÀº (false)
-cin.tie(0);  // cin¸í·ÉÀ» ¼öÇàÇÏ±â Àü¿¡ cout¹öÆÛ¸¦ ºñ¿ìÁö ¾ÊÀ½, ¿øÇüÀº (nullptr)
+ios::sync_with_stdio(0);  // stdioì¶œë ¥ë²„í¼ì™€ ì‹±í¬ í•´ì œ, ì›í˜•ì€ (false)
+cin.tie(0);  // cinëª…ë ¹ì„ ìˆ˜í–‰í•˜ê¸° ì „ì— coutë²„í¼ë¥¼ ë¹„ìš°ì§€ ì•ŠìŒ, ì›í˜•ì€ (nullptr)
 ```
 
-#### NÀÇ ÇÑ°è°ª¿¡ µû¸¥ ´ë·«ÀûÀÎ Çã¿ë ½Ã°£º¹Àâµµ À¯Ãß  
-ÄÄÇ»ÅÍ´Â 1ÃÊ¿¡ ´ë·« 3~5¾ï°³ Á¤µµÀÇ ¿¬»êÀ» Ã³¸®ÇÒ ¼ö ÀÖ´Ù.  
-N¡Â11 ¢¡ O(N!)  
-<b>N¡Â25 ¢¡ O(2^N^)</b>  
-N¡Â100 ¢¡ O(N^4^)  
-N¡Â500 ¢¡ O(N^3^)  
-N¡Â3,000 ¢¡ O(N^2^logN)  
-<b>N¡Â5,000 ¢¡ O(N^2^)</b>  
-<b>N¡Â1,000,000 ¢¡ O(NlogN)</b>  
-<b>N¡Â10,000,000 ¢¡ O(N)</b>  
-(¾îµð±îÁö³ª Âü°í¸¸ ÇÒ °Í)  
-\+°ø°£º¹Àâµµ: 512MB ¢¡ 1.2¾ï°³ÀÇ int  
+#### Nì˜ í•œê³„ê°’ì— ë”°ë¥¸ ëŒ€ëžµì ì¸ í—ˆìš© ì‹œê°„ë³µìž¡ë„ ìœ ì¶”  
+ì»´í“¨í„°ëŠ” 1ì´ˆì— ëŒ€ëžµ 3~5ì–µê°œ ì •ë„ì˜ ì—°ì‚°ì„ ì²˜ë¦¬í•  ìˆ˜ ìžˆë‹¤.  
+Nâ‰¤11 â‡’ O(N!)  
+<b>Nâ‰¤25 â‡’ O(2^N^)</b>  
+Nâ‰¤100 â‡’ O(N^4^)  
+Nâ‰¤500 â‡’ O(N^3^)  
+Nâ‰¤3,000 â‡’ O(N^2^logN)  
+<b>Nâ‰¤5,000 â‡’ O(N^2^)</b>  
+<b>Nâ‰¤1,000,000 â‡’ O(NlogN)</b>  
+<b>Nâ‰¤10,000,000 â‡’ O(N)</b>  
+(ì–´ë””ê¹Œì§€ë‚˜ ì°¸ê³ ë§Œ í•  ê²ƒ)  
+\+ê³µê°„ë³µìž¡ë„: 512MB â‡’ 1.2ì–µê°œì˜ int  
 
-#### ½Ç¼ö »ç¿ë½Ã ÁÖÀÇ»çÇ×
-1. ¿ÀÂ÷°¡ ¹ß»ýÇÒ ¼ö ¹Û¿¡ ¾ø´Ù.
-2. double¿¡ long long ¹üÀ§ÀÇ Á¤¼ö¸¦ ÇÔºÎ·Î ´ãÀ¸¸é ¾ÈµÈ´Ù.  
-\*double À¯È¿¼ýÀÚ 15ÀÚ¸®, long long À¯È¿¼ýÀÚ ÃÖ´ë 19ÀÚ¸®
-3. µîÈ£¸¦ »ç¿ëÇÏ¸é ¾ÈµÈ´Ù.  
-\*`abs(a-b) < 1e-12` ¿Í °°ÀÌ »ç¿ë(`1e-12`: 10^-12^)  
+#### ì‹¤ìˆ˜ ì‚¬ìš©ì‹œ ì£¼ì˜ì‚¬í•­
+1. ì˜¤ì°¨ê°€ ë°œìƒí•  ìˆ˜ ë°–ì— ì—†ë‹¤.
+2. doubleì— long long ë²”ìœ„ì˜ ì •ìˆ˜ë¥¼ í•¨ë¶€ë¡œ ë‹´ìœ¼ë©´ ì•ˆëœë‹¤.  
+\*double ìœ íš¨ìˆ«ìž 15ìžë¦¬, long long ìœ íš¨ìˆ«ìž ìµœëŒ€ 19ìžë¦¬
+3. ë“±í˜¸ë¥¼ ì‚¬ìš©í•˜ë©´ ì•ˆëœë‹¤.  
+\*`abs(a-b) < 1e-12` ì™€ ê°™ì´ ì‚¬ìš©(`1e-12`: 10^-12^)  
 
-#### °ø¹éÀ» Æ÷ÇÔÇÑ ¹®ÀÚ¿­ ÀÔ·Â  
+#### ê³µë°±ì„ í¬í•¨í•œ ë¬¸ìžì—´ ìž…ë ¥  
 ```cpp
 string s;
 getline(cin, s);  //std::getline()
