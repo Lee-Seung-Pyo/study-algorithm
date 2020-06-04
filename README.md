@@ -38,6 +38,7 @@ for preparing 'coding test'
 [BOJ1912 연속합](/src/BOJ1912.md)  
 [BOJ11053 가장 긴 증가하는 부분 수열](/src/BOJ11053.md)  
 [BOJ2293 동전 1](/src/BOJ2293.md)  
+[BOJ11051 이항 계수 2](/src/BOJ11051.md)  
 
 ### 그리디
 [BOJ10610 30](/src/BOJ10610.md)  
@@ -45,6 +46,11 @@ for preparing 'coding test'
 
 ### 수학  
 [BOJ11653 소인수분해](/src/BOJ11653.md)  
+[BOJ2501 약수 구하기](/src/BOJ2501.md)  
+[BOJ6064 카잉 달력](/src/BOJ6064.md)  
+[BOJ11050 이항 계수 1](/src/BOJ11050.md)  
+[BOJ11051 이항 계수 2](/src/BOJ11051.md)  
+[BOJ1676 팩토리얼 0의 개수](/src/BOJ1676.md)  
 
 ### 다익스트라 알고리즘
 [BOJ1753 최단경로](/src/BOJ1753.md)  

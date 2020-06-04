@@ -7,13 +7,6 @@ int main() {
 	cin.tie(0);
 	int n;
 	cin >> n;
-	for (int i = 2; i*i<=n; i++) {
-		while (n % i == 0) {
-			cout << i << endl;
-			n /= i;
-		}
-	}
-	if (n != 1) cout << n << endl;
-
+	cout << n / 5 + n / 25 + n / 125;
 	return 0;
 }
