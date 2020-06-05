@@ -52,6 +52,10 @@ for preparing 'coding test'
 [BOJ11051 이항 계수 2](/src/BOJ11051.md)  
 [BOJ1676 팩토리얼 0의 개수](/src/BOJ1676.md)  
 
+### 이분 탐색  
+[BOJ1920 수 찾기](/src/BOJ1920.md)  
+[BOJ10816 숫자 카드 2](/src/BOJ10816.md)  
+
 ### 다익스트라 알고리즘
 [BOJ1753 최단경로](/src/BOJ1753.md)  
 
@@ -114,7 +118,11 @@ priory_queue
 활용: 다익스트라  
 
 #### \<algorithm>  
-sort, max/min, fill 등 유용한 함수들 다수 존재  
+유용한 함수들 다수 존재  
+sort  
+max, min, max_element, min_element  
+fill  
+binary_search, lower_bound, upper_bound  
 
 #### \<climits> (\<limits.h>)  
 기본 자료형의 최댓/최솟값 존재  
