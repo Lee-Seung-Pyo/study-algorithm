@@ -2,43 +2,22 @@
 #define endl '\n'
 using namespace std;
 
-int n;
-int a[500000];
-
-int lower_idx(int target) {
-	int st = 0;
-	int en = n;
-	while (st != en) {
-		int mid = (st + en) / 2;
-		if (a[mid] < target) st = mid + 1;
-		else en = mid;
-	}
-	return st;
-}
-
-int upper_idx(int target) {
-	int st = 0;
-	int en = n;
-	while (st != en) {
-		int mid = (st + en) / 2;
-		if (a[mid] <= target) st = mid + 1;
-		else en = mid;
-	}
-	return st;
-}
+priority_queue<int, vector<int>, greater<int>> pq;
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
+	int n;
 	cin >> n;
-	for (int i = 0; i < n; i++) cin >> a[i];
-	sort(a, a + n);
-	int m;
-	cin >> m;
-	while (m--) {
-		int target;
-		cin >> target;
-		cout << upper_idx(target) - lower_idx(target) << ' ';
+	while (n--) {
+		int x;
+		cin >> x;
+		if (x) pq.push(x);
+		else if (pq.empty()) cout << 0 << endl;
+		else {
+			cout << pq.top() << endl;
+			pq.pop();
+		}
 	}
 
 	return 0;
