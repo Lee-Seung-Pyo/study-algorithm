@@ -56,6 +56,9 @@ for preparing 'coding test'
 [BOJ1920 수 찾기](/src/BOJ1920.md)  
 [BOJ10816 숫자 카드 2](/src/BOJ10816.md)  
 
+### 문자열 - KMP, 라빈 카프  
+[BOJ1786 찾기](/src/BOJ1786.md)  
+
 ### 다익스트라 알고리즘
 [BOJ1753 최단경로](/src/BOJ1753.md)  
 
@@ -117,7 +120,11 @@ begin(), end() 는 포인터 반환 / front(), back() 은 값 반환
 #### \<queue>  
 queue  
 활용: BFS  
-priory_queue  
+priority_queue - 힙 자료구조. 삽입과 삭제는 O(logN), 검색은 O(1).
+```cpp
+priority_queue<int> pq; // 최대 힙
+priority_queue<int, vector<int>, greater<int>> pq; // 최소 힙
+```  
 활용: 다익스트라  
 
 #### \<algorithm>  
@@ -141,6 +148,22 @@ ex) INT_MAX, INT_MIN
 #### \<sstream>  
 문자열 다룰 때 유용  
 stringstream: 문자열에서 내가 원하는 자료형의 데이터를 추출할 때  
+
+#### \<set>  
+값들을 이진 검색 트리로 저장하는 자료구조. 단, 중복 원소는 허용하지 않음.  
+삽입, 검색, 삭제가 O(logN).  
+
+#### \<multiset>  
+값들을 이진 검색 트리로 저장하는 자료구조. 중복 원소가 허용됨.  
+삽입, 검색, 삭제가 O(logN).  
+
+#### \<map>  
+(key, value)를 key에 대한 이진 검색 트리로 저장하는 자료구조. 단, 중복 key는 허용하지 않음.  
+삽입, 검색, 삭제가 O(logN).  
+
+#### \<multimap>
+(key, value)를 key에 대한 이진 검색 트리로 저장하는 자료구조. 중복 key가 허용됨.  
+삽입, 검색, 삭제가 O(logN).  
 
 
 ## 기타  

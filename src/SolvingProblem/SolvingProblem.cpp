@@ -2,23 +2,35 @@
 #define endl '\n'
 using namespace std;
 
-priority_queue<int, vector<int>, greater<int>> pq;
+vector<int> failure(string& S) {
+	vector<int> f(S.size(), 0);
+	int j = 0;
+	for (int i = 1; i < S.size(); i++) {
+		while (j > 0 && S[j] != S[i]) j = f[j - 1];
+		if (S[j] == S[i]) f[i] = ++j;
+	}
+	return f;
+}
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	int n;
-	cin >> n;
-	while (n--) {
-		int x;
-		cin >> x;
-		if (x) pq.push(x);
-		else if (pq.empty()) cout << 0 << endl;
-		else {
-			cout << pq.top() << endl;
-			pq.pop();
+	string T, P;
+	getline(cin, T);
+	getline(cin, P);
+	vector<int> f = failure(P);
+	int j = 0;
+	vector<int> occur;
+	for (int i = 0; i < T.size(); i++) {
+		while (j > 0 && T[i] != P[j]) j = f[j - 1];
+		if (T[i] == P[j]) j++;
+		if (j == P.size()) {
+			occur.push_back(i - j + 2);
+			j = f[j - 1];
 		}
 	}
+	cout << occur.size() << endl;
+	for (auto e : occur) cout << e << ' ';
 
 	return 0;
 }
