@@ -9,6 +9,7 @@ for preparing 'coding test'
 [BOJ1926 그림](/src/BOJ1926.md)  
 [BOJ4179 불!](/src/BOJ4179.md)  
 [BOJ1697 숨바꼭질](/src/BOJ1697.md)  
+[BOJ11724 연결 요소의 개수](/src/BOJ11724.md)  
 
 ### 재귀  
 [BOJ1629 곱셈](/src/BOJ1629.md)  
