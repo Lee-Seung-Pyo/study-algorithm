@@ -107,6 +107,9 @@ for preparing 'coding test'
 #### 힙  
 [BOJ1927 최소 힙](/src/BOJ1927.md)  
 
+#### 트리  
+[BOJ1991 트리 순회](/src/BOJ1991.md)  
+
 
 ## C++ STL 컨테이너  
 자주 쓰이는 컨테이너들  

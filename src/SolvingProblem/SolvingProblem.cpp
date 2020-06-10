@@ -2,38 +2,43 @@
 #define endl '\n'
 using namespace std;
 
-vector<int> v[1005];
-int vis[1005];
+int lc[30];
+int rc[30];
+
+void preorder(int x) {
+	cout << (char)(x + 'A');
+	if(lc[x]) preorder(lc[x]);
+	if(rc[x]) preorder(rc[x]);
+}
+
+void inorder(int x) {
+	if (lc[x]) inorder(lc[x]);
+	cout << (char)(x + 'A');
+	if (rc[x]) inorder(rc[x]);
+}
+
+void postorder(int x) {
+	if (lc[x]) postorder(lc[x]);
+	if (rc[x]) postorder(rc[x]);
+	cout << (char)(x + 'A');
+}
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	int n, m;
-	cin >> n >> m;
-	while (m--) {
-		int x, y;
-		cin >> x >> y;
-		v[x].push_back(y);
-		v[y].push_back(x);
+	int n;
+	cin >> n;
+	while (n--) {
+		char p, l, r;
+		cin >> p >> l >> r;
+		if (l != '.') lc[p - 'A'] = (int)(l - 'A');
+		if (r != '.') rc[p - 'A'] = (int)(r - 'A');
 	}
-	queue<int> q;
-	int cnt = 0;
-	for (int i = 1; i <= n; i++) {
-		if (vis[i]) continue;
-		cnt++;
-		q.push(i);
-		vis[i] = 1;
-		while (!q.empty()) {
-			int cur = q.front();
-			q.pop();
-			for (auto e : v[cur]) {
-				if (vis[e]) continue;
-				q.push(e);
-				vis[e] = 1;
-			}
-		}
-	}
-	cout << cnt;
+	preorder(0);
+	cout << endl;
+	inorder(0);
+	cout << endl;
+	postorder(0);
 
 	return 0;
 }
