@@ -57,8 +57,11 @@ for preparing 'coding test'
 [BOJ1920 수 찾기](/src/BOJ1920.md)  
 [BOJ10816 숫자 카드 2](/src/BOJ10816.md)  
 
-### 문자열 - KMP, 라빈 카프  
+### 문자열 매칭 - KMP, 라빈 카프  
 [BOJ1786 찾기](/src/BOJ1786.md)  
+
+### 위상 정렬  
+[BOJ2252 줄 세우기](/src/BOJ2252.md)  
 
 ### 다익스트라 알고리즘
 [BOJ1753 최단경로](/src/BOJ1753.md)  

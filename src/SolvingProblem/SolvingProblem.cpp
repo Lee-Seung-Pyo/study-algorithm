@@ -2,43 +2,33 @@
 #define endl '\n'
 using namespace std;
 
-int lc[30];
-int rc[30];
-
-void preorder(int x) {
-	cout << (char)(x + 'A');
-	if(lc[x]) preorder(lc[x]);
-	if(rc[x]) preorder(rc[x]);
-}
-
-void inorder(int x) {
-	if (lc[x]) inorder(lc[x]);
-	cout << (char)(x + 'A');
-	if (rc[x]) inorder(rc[x]);
-}
-
-void postorder(int x) {
-	if (lc[x]) postorder(lc[x]);
-	if (rc[x]) postorder(rc[x]);
-	cout << (char)(x + 'A');
-}
+vector<int> adj[32005];
+int indeg[32005];
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	int n;
-	cin >> n;
-	while (n--) {
-		char p, l, r;
-		cin >> p >> l >> r;
-		if (l != '.') lc[p - 'A'] = (int)(l - 'A');
-		if (r != '.') rc[p - 'A'] = (int)(r - 'A');
+	int n, m;
+	cin >> n >> m;
+	while (m--) {
+		int x, y;
+		cin >> x >> y;
+		adj[x].push_back(y);
+		indeg[y]++;
 	}
-	preorder(0);
-	cout << endl;
-	inorder(0);
-	cout << endl;
-	postorder(0);
+	queue<int> q;
+	for (int i = 1; i <= n; i++) {
+		if (indeg[i] == 0) q.push(i);
+	}
+	while (!q.empty()) {
+		int cur = q.front();
+		q.pop();
+		cout << cur << ' ';
+		for (auto e : adj[cur]) {
+			indeg[e]--;
+			if (indeg[e] == 0) q.push(e);
+		}
+	}
 
 	return 0;
 }
