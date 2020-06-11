@@ -44,6 +44,7 @@ for preparing 'coding test'
 ### 그리디
 [BOJ10610 30](/src/BOJ10610.md)  
 [BOJ11047 동전 0](/src/BOJ11047.md)  
+[BOJ1197 최소 스패닝 트리](/src/BOJ1197.md)  
 
 ### 수학  
 [BOJ11653 소인수분해](/src/BOJ11653.md)  
@@ -57,11 +58,14 @@ for preparing 'coding test'
 [BOJ1920 수 찾기](/src/BOJ1920.md)  
 [BOJ10816 숫자 카드 2](/src/BOJ10816.md)  
 
-### 문자열 매칭 - KMP, 라빈 카프  
+### 문자열 매칭 - KMP, Rabin-Karp  
 [BOJ1786 찾기](/src/BOJ1786.md)  
 
 ### 위상 정렬  
 [BOJ2252 줄 세우기](/src/BOJ2252.md)  
+
+### 최소 신장 트리 - Kruskal, Prim  
+[BOJ1197 최소 스패닝 트리](/src/BOJ1197.md)  
 
 ### 다익스트라 알고리즘
 [BOJ1753 최단경로](/src/BOJ1753.md)  
