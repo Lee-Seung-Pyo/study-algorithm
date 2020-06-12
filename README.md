@@ -67,10 +67,11 @@ for preparing 'coding test'
 ### 최소 신장 트리 - Kruskal, Prim  
 [BOJ1197 최소 스패닝 트리](/src/BOJ1197.md)  
 
-### 다익스트라 알고리즘
+### 최단 경로 - Floyd, Dijkstra  
+[BOJ11404 플로이드](/src/BOJ11404.md)  
 [BOJ1753 최단경로](/src/BOJ1753.md)  
 
-### 구현
+### 구현  
 [BOJ10871 X보다 작은 수](/src/BOJ10871.md)  
 [BOJ2504 괄호의 값](/src/BOJ2504.md)  
 
@@ -160,20 +161,12 @@ ex) INT_MAX, INT_MIN
 문자열 다룰 때 유용  
 stringstream: 문자열에서 내가 원하는 자료형의 데이터를 추출할 때  
 
-#### \<set>  
-값들을 이진 검색 트리로 저장하는 자료구조. 단, 중복 원소는 허용하지 않음.  
+#### \<set>, \<multiset>  
+값들을 이진 검색 트리로 저장하는 자료구조. \<set>은 중복 원소 허용X, \<multiset>은 허용O.  
 삽입, 검색, 삭제가 O(logN).  
 
-#### \<multiset>  
-값들을 이진 검색 트리로 저장하는 자료구조. 중복 원소가 허용됨.  
-삽입, 검색, 삭제가 O(logN).  
-
-#### \<map>  
-(key, value)를 key에 대한 이진 검색 트리로 저장하는 자료구조. 단, 중복 key는 허용하지 않음.  
-삽입, 검색, 삭제가 O(logN).  
-
-#### \<multimap>
-(key, value)를 key에 대한 이진 검색 트리로 저장하는 자료구조. 중복 key가 허용됨.  
+#### \<map>, \<multimap>  
+(key, value)를 key에 대한 이진 검색 트리로 저장하는 자료구조. \<map>은 중복 key 허용X, \<multimap>은 허용O.(근데 사실 멀티맵은 잘 안씀)  
 삽입, 검색, 삭제가 O(logN).  
 
 
