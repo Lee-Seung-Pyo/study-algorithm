@@ -69,6 +69,7 @@ for preparing 'coding test'
 
 ### 최단 경로 - Floyd, Dijkstra  
 [BOJ11404 플로이드](/src/BOJ11404.md)  
+[BOJ11780 플로이드 2](/src/BOJ11780.md)  
 [BOJ1753 최단경로](/src/BOJ1753.md)  
 
 ### 구현  
