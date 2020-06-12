@@ -59,18 +59,23 @@ for preparing 'coding test'
 [BOJ10816 숫자 카드 2](/src/BOJ10816.md)  
 
 ### 문자열 매칭 - KMP, Rabin-Karp  
+##### KMP  
 [BOJ1786 찾기](/src/BOJ1786.md)  
 
 ### 위상 정렬  
 [BOJ2252 줄 세우기](/src/BOJ2252.md)  
 
 ### 최소 신장 트리 - Kruskal, Prim  
+##### Kruskal  
 [BOJ1197 최소 스패닝 트리](/src/BOJ1197.md)  
 
 ### 최단 경로 - Floyd, Dijkstra  
+##### Floyd  
 [BOJ11404 플로이드](/src/BOJ11404.md)  
 [BOJ11780 플로이드 2](/src/BOJ11780.md)  
+##### Dijkstra  
 [BOJ1753 최단경로](/src/BOJ1753.md)  
+[BOJ11779 최소비용 구하기 2](/src/BOJ11779.md)  
 
 ### 구현  
 [BOJ10871 X보다 작은 수](/src/BOJ10871.md)  
