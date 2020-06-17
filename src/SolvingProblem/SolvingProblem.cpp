@@ -1,51 +1,48 @@
 #include <bits/stdc++.h>
 #define endl '\n'
-#define INF 1'000'000'000
 using namespace std;
 
-vector<pair<int, int>> adj[1001];
-int d[1001];
-int pre[1001];
+int dx[4] = { -1,1,0,0 };
+int dy[4] = { 0,0,-1,1 };
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	int n, m;
-	cin >> n >> m;
-	while (m--) {
-		int a, b, c;
-		cin >> a >> b >> c;
-		adj[a].push_back({ b,c });
-	}
-	int st, en;
-	cin >> st >> en;
-	fill(d, d + n + 1, INF);
-	d[st] = 0;
-	priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
-	pq.push({ d[st], st });
-	while (!pq.empty()) {
-		auto cur = pq.top(); pq.pop();
-		int dist = cur.first, idx = cur.second;
-		if (d[idx] != dist) continue;
-		for (auto e : adj[idx]) {
-			int nidx = e.first, cost = e.second;
-			if (d[nidx] > d[idx] + cost) {
-				d[nidx] = d[idx] + cost;
-				pq.push({ d[nidx], nidx });
-				pre[nidx] = idx;
+	int tc;
+	cin >> tc;
+	while (tc--) {
+		int board[50][50] = {};
+		int m, n, k;
+		cin >> m >> n >> k;
+		while (k--) {
+			int x, y;
+			cin >> x >> y;
+			board[x][y] = 1;
+		}
+		int cnt = 0;
+		for (int i = 0; i < m; i++) {
+			for (int j = 0; j < n; j++) {
+				if (board[i][j] == 0) continue;
+				cnt++;
+				queue<pair<int, int>> q;
+				q.push({ i,j });
+				board[i][j] = 0;
+				while (!q.empty()) {
+					auto cur = q.front(); q.pop();
+					int x = cur.first, y = cur.second;
+					for (int e = 0; e < 4; e++) {
+						int nx = x + dx[e], ny = y + dy[e];
+						if (nx < 0 || nx >= m || ny < 0 || ny >= n) continue;
+						if (board[nx][ny]) {
+							q.push({ nx,ny });
+							board[nx][ny] = 0;
+						}
+					}
+				}
 			}
 		}
+		cout << cnt << endl;
 	}
-	cout << d[en] << endl;
-	vector<int> path;
-	int cur = en;
-	while (cur != st) {
-		path.push_back(cur);
-		cur = pre[cur];
-	}
-	path.push_back(st);
-	cout << path.size() << endl;
-	for (int i = path.size()-1; i >= 0; i--) cout << path[i] << ' ';
 
 	return 0;
 }
