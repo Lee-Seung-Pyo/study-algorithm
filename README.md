@@ -12,6 +12,7 @@ for preparing 'coding test'
 [BOJ11724 연결 요소의 개수](/src/BOJ11724.md)  
 [BOJ1012 유기농 배추](/src/BOJ1012.md)  
 [BOJ7569 토마토](/src/BOJ7569.md) - 3차원 BFS  
+[BOJ9466 텀 프로젝트](/src/BOJ9466.md) - 사이클 찾기  
 
 ### 재귀  
 [BOJ1629 곱셈](/src/BOJ1629.md)  

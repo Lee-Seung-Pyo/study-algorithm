@@ -2,50 +2,50 @@
 #define endl '\n'
 using namespace std;
 
-int board[100][100][100];
-int dz[6] = { -1,1,0,0,0,0 };
-int dx[6] = { 0,0,-1,1,0,0 };
-int dy[6] = { 0,0,0,0,-1,1 };
+int outdeg[100001];
+int vis[100001];  // 0: 방문안함, 1: 현재방문중, 2: 팀없음, 3: 팀있음
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	int m, n, h;
-	cin >> m >> n >> h;
-	queue<tuple<int,int,int,int>> q;
-	for (int k = 0; k < h; k++) {
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < m; j++) {
-				cin >> board[k][i][j];
-				if (board[k][i][j] == 1) q.push({ k,i,j,0 });
+	int tc;
+	cin >> tc;
+	while (tc--) {
+		int n;
+		cin >> n;
+		for (int i = 1; i <= n; i++) cin >> outdeg[i];
+		queue<int> q;
+		for (int i = 1; i <= n; i++) {
+			if (vis[i]) continue;
+			int nxt = i;
+			while (!vis[nxt]) {
+				q.push(nxt);
+				vis[nxt] = 1;
+				nxt = outdeg[nxt];
 			}
-		}
-	}
-	int mx = 0;
-	while (!q.empty()) {
-		int cz, cx, cy, cd;
-		tie(cz, cx, cy, cd) = q.front(); q.pop();
-		for (int i = 0; i < 6; i++) {
-			int nz = cz + dz[i], nx = cx + dx[i], ny = cy + dy[i];
-			if (nz < 0 || nz >= h || nx < 0 || nx >= n || ny < 0 || ny >= m) continue;
-			if (board[nz][nx][ny] == 0) {
-				q.push({ nz,nx,ny,cd + 1 });
-				board[nz][nx][ny] = 1;
-				mx = cd + 1;
+			if (vis[nxt] == 1) { // 서클 찾음
+				int flag = 0;
+				while (!q.empty()) {
+					int cur = q.front(); q.pop();
+					if (cur == nxt) flag = 1;
+					if (!flag) vis[cur] = 2;
+					else vis[cur] = 3;
+				}
 			}
-		}
-	}
-	for (int k = 0; k < h; k++) {
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < m; j++) {
-				if (board[k][i][j] == 0) {
-					cout << -1;
-					return 0;
+			else { // vis[nxt] == 2 or 3
+				while (!q.empty()) {
+					int cur = q.front(); q.pop();
+					vis[cur] = 2;
 				}
 			}
 		}
+		int cnt = 0;
+		for (int i = 1; i <= n; i++) {
+			if (vis[i] == 2) cnt++;
+			vis[i] = 0;
+		}
+		cout << cnt << endl;
 	}
-	cout << mx;
 
 	return 0;
 }
