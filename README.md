@@ -13,6 +13,7 @@ for preparing 'coding test'
 [BOJ1012 유기농 배추](/src/BOJ1012.md)  
 [BOJ7569 토마토](/src/BOJ7569.md) - 3차원 BFS  
 [BOJ9466 텀 프로젝트](/src/BOJ9466.md) - 사이클 찾기  
+[BOJ2583 영역 구하기](/src/BOJ2583.md)  
 
 ### 재귀  
 [BOJ1629 곱셈](/src/BOJ1629.md)  

@@ -2,50 +2,54 @@
 #define endl '\n'
 using namespace std;
 
-int outdeg[100001];
-int vis[100001];  // 0: 방문안함, 1: 현재방문중, 2: 팀없음, 3: 팀있음
+int board[100][100];
+int dx[4] = { -1,1,0,0 };
+int dy[4] = { 0,0,-1,1 };
+int m, n, k;
+vector<int> ans;
+
+void bfs(int x, int y) {
+	queue<pair<int, int>> q;
+	q.push({ x, y });
+	board[x][y] = 1;
+	int cnt = 1;
+	while (!q.empty()) {
+		auto cur = q.front(); q.pop();
+		for (int i = 0; i < 4; i++) {
+			int nx = cur.first + dx[i], ny = cur.second + dy[i];
+			if (nx < 0 || nx >= m || ny < 0 || ny >= n) continue;
+			if (board[nx][ny] == 0) {
+				q.push({ nx,ny });
+				board[nx][ny] = 1;
+				cnt++;
+			}
+		}
+	}
+	ans.push_back(cnt);
+}
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	int tc;
-	cin >> tc;
-	while (tc--) {
-		int n;
-		cin >> n;
-		for (int i = 1; i <= n; i++) cin >> outdeg[i];
-		queue<int> q;
-		for (int i = 1; i <= n; i++) {
-			if (vis[i]) continue;
-			int nxt = i;
-			while (!vis[nxt]) {
-				q.push(nxt);
-				vis[nxt] = 1;
-				nxt = outdeg[nxt];
-			}
-			if (vis[nxt] == 1) { // 서클 찾음
-				int flag = 0;
-				while (!q.empty()) {
-					int cur = q.front(); q.pop();
-					if (cur == nxt) flag = 1;
-					if (!flag) vis[cur] = 2;
-					else vis[cur] = 3;
-				}
-			}
-			else { // vis[nxt] == 2 or 3
-				while (!q.empty()) {
-					int cur = q.front(); q.pop();
-					vis[cur] = 2;
-				}
+	cin >> m >> n >> k;
+	while (k--) {
+		int x1, y1, x2, y2;
+		cin >> x1 >> y1 >> x2 >> y2;
+		for (int i = y1; i < y2; i++) {
+			for (int j = x1; j < x2; j++) {
+				board[i][j] = -1;
 			}
 		}
-		int cnt = 0;
-		for (int i = 1; i <= n; i++) {
-			if (vis[i] == 2) cnt++;
-			vis[i] = 0;
-		}
-		cout << cnt << endl;
 	}
+	for (int i = 0; i < m; i++) {
+		for (int j = 0; j < n; j++) {
+			if (board[i][j] != 0) continue;
+			bfs(i, j);
+		}
+	}
+	cout << ans.size() << endl;
+	sort(ans.begin(), ans.end());
+	for (auto e : ans) cout << e << ' ';
 
 	return 0;
 }
