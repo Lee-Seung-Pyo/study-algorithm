@@ -33,6 +33,7 @@ for preparing 'coding test'
 
 ### 정렬  
 [BOJ11728 배열 합치기](/src/BOJ11728.md)  
+[BOJ13316 std::정렬부터 시작하는 디버깅 생활](/src/BOJ13316.md)  
 
 ### 동적 계획법(DP)
 [BOJ1003 피보나치 수열](/src/BOJ1003.md)  
