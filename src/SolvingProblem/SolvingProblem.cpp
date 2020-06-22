@@ -2,39 +2,34 @@
 #define endl '\n'
 using namespace std;
 
-int vis[300][300];
-int dx[8] = { -1,-2,-2,-1,1,2,2,1 };
-int dy[8] = { -2,-1,1,2,2,1,-1,-2 };
+int n;
+
+void recursion(int x) {
+	for (int i = 0; i < x; i++) cout << "____";
+	cout << "\"재귀함수가 뭔가요?\"" << endl;
+	if (x != n) {
+		for (int i = 0; i < x; i++) cout << "____";
+		cout << "\"잘 들어보게. 옛날옛날 한 산 꼭대기에 이세상 모든 지식을 통달한 선인이 있었어." << endl;
+		for (int i = 0; i < x; i++) cout << "____";
+		cout << "마을 사람들은 모두 그 선인에게 수많은 질문을 했고, 모두 지혜롭게 대답해 주었지." << endl;
+		for (int i = 0; i < x; i++) cout << "____";
+		cout << "그의 답은 대부분 옳았다고 하네. 그런데 어느 날, 그 선인에게 한 선비가 찾아와서 물었어.\"" << endl;
+		recursion(x + 1);
+	}
+	else {
+		for (int i = 0; i < x; i++) cout << "____";
+		cout << "\"재귀함수는 자기 자신을 호출하는 함수라네\"" << endl;
+	}
+	for (int i = 0; i < x; i++) cout << "____";
+	cout << "라고 답변하였지." << endl;
+}
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	int tc;
-	cin >> tc;
-	while (tc--) {
-		int n;
-		cin >> n;
-		for (int i = 0; i < n; i++) fill(vis[i], vis[i] + n, -1);
-		int x1, y1, x2, y2;
-		cin >> x1 >> y1 >> x2 >> y2;
-		queue<pair<int,int>> q;
-		q.push({ x1,y1 });
-		vis[x1][y1] = 0;
-		while (!q.empty()) {
-			auto cur = q.front(); q.pop();
-			int x = cur.first, y = cur.second;
-			if (x == x2 && y == y2) break;
-			for (int i = 0; i < 8; i++) {
-				int nx = x + dx[i], ny = y + dy[i];
-				if (nx < 0 || nx >= n || ny < 0 || ny >= n) continue;
-				if (vis[nx][ny] == -1) {
-					q.push({ nx, ny });
-					vis[nx][ny] = vis[x][y] + 1;
-				}
-			}
-		}
-		cout << vis[x2][y2] << endl;
-	}
+	cin >> n;
+	cout << "어느 한 컴퓨터공학과 학생이 유명한 교수님을 찾아가 물었다." << endl;
+	recursion(0);
 
 	return 0;
 }

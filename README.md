@@ -23,6 +23,7 @@ for preparing 'coding test'
 [BOJ2447 별 찍기 - 10](/src/BOJ2447.md)  
 [BOJ2448 별 찍기 - 11](/src/BOJ2448.md)  
 [BOJ1992 쿼드트리](/src/BOJ1992.md)  
+[BOJ17478 재귀함수가 뭔가요?](/src/BOJ17478.md)  
 
 ### 백트래킹  
 [BOJ15649 N과 M (1)](/src/BOJ15649.md)  
