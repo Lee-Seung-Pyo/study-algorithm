@@ -2,34 +2,20 @@
 #define endl '\n'
 using namespace std;
 
-int n;
-
-void recursion(int x) {
-	for (int i = 0; i < x; i++) cout << "____";
-	cout << "\"재귀함수가 뭔가요?\"" << endl;
-	if (x != n) {
-		for (int i = 0; i < x; i++) cout << "____";
-		cout << "\"잘 들어보게. 옛날옛날 한 산 꼭대기에 이세상 모든 지식을 통달한 선인이 있었어." << endl;
-		for (int i = 0; i < x; i++) cout << "____";
-		cout << "마을 사람들은 모두 그 선인에게 수많은 질문을 했고, 모두 지혜롭게 대답해 주었지." << endl;
-		for (int i = 0; i < x; i++) cout << "____";
-		cout << "그의 답은 대부분 옳았다고 하네. 그런데 어느 날, 그 선인에게 한 선비가 찾아와서 물었어.\"" << endl;
-		recursion(x + 1);
-	}
-	else {
-		for (int i = 0; i < x; i++) cout << "____";
-		cout << "\"재귀함수는 자기 자신을 호출하는 함수라네\"" << endl;
-	}
-	for (int i = 0; i < x; i++) cout << "____";
-	cout << "라고 답변하였지." << endl;
-}
+int select[8] = {};
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	cin >> n;
-	cout << "어느 한 컴퓨터공학과 학생이 유명한 교수님을 찾아가 물었다." << endl;
-	recursion(0);
+	int n, m;
+	cin >> n >> m;
+	for (int i = 0; i < m; i++) select[i] = 1;
+	do {
+		for (int i = 0; i < n; i++) {
+			if (select[i]) cout << i + 1 << ' ';
+		}
+		cout << endl;
+	} while (prev_permutation(select, select + n));
 
 	return 0;
 }

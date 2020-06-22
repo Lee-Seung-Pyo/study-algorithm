@@ -27,6 +27,7 @@ for preparing 'coding test'
 
 ### 백트래킹  
 [BOJ15649 N과 M (1)](/src/BOJ15649.md)  
+[BOJ15650 N과 M (2)](/src/BOJ15650.md)  
 [BOJ15652 N과 M (4)](/src/BOJ15652.md)  
 [BOJ9663 N-Queen](/src/BOJ9663.md)  
 
