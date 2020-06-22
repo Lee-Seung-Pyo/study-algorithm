@@ -28,7 +28,12 @@ for preparing 'coding test'
 ### 백트래킹  
 [BOJ15649 N과 M (1)](/src/BOJ15649.md)  
 [BOJ15650 N과 M (2)](/src/BOJ15650.md)  
+[BOJ15651 N과 M (3)](/src/BOJ15651.md)  
 [BOJ15652 N과 M (4)](/src/BOJ15652.md)  
+[BOJ15654 N과 M (5)](/src/BOJ15654.md)  
+[BOJ15655 N과 M (6)](/src/BOJ15655.md)  
+[BOJ15656 N과 M (7)](/src/BOJ15656.md)  
+[BOJ15657 N과 M (8)](/src/BOJ15657.md)  
 [BOJ9663 N-Queen](/src/BOJ9663.md)  
 
 ### 시뮬레이션  
@@ -159,6 +164,7 @@ sort
 max, min, max_element, min_element  
 fill  
 binary_search, lower_bound, upper_bound  
+next_permutation, prev_permutation  
 
 #### \<climits> (\<limits.h>)  
 기본 자료형의 최댓/최솟값 존재  
