@@ -3,21 +3,18 @@
 using namespace std;
 
 int n, m;
-map<int, int> remain;
-int arr[8];
+set<int> s;
+int arr[7];
 
-void func(int k, int pre) {
+void func(int k) {
 	if (k == m) {
 		for (int i = 0; i < m; i++) cout << arr[i] << ' ';
 		cout << endl;
 		return;
 	}
-	for (auto it = pre == 0 ? remain.begin() : remain.find(pre); it != remain.end(); it++) {
-		if (it->second == 0) continue;
-		arr[k] = it->first;
-		it->second--;
-		func(k + 1, it->first);
-		it->second++;
+	for (auto e : s) {
+		arr[k] = e;
+		func(k + 1);
 	}
 }
 
@@ -28,11 +25,9 @@ int main() {
 	for (int i = 0; i < n; i++) {
 		int x;
 		cin >> x;
-		auto it = remain.find(x);
-		if (it == remain.end()) remain[x] = 1;
-		else remain[x]++;
+		s.insert(x);
 	}
-	func(0, 0);
+	func(0);
 
 	return 0;
 }
