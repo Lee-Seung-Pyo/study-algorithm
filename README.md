@@ -37,6 +37,7 @@ for preparing 'coding test'
 [BOJ15663 N과 M (9)](/src/BOJ15663.md)  
 [BOJ15664 N과 M (10)](/src/BOJ15664.md)  
 [BOJ15665 N과 M (11)](/src/BOJ15665.md)  
+[BOJ15666 N과 M (12)](/src/BOJ15666.md)  
 [BOJ9663 N-Queen](/src/BOJ9663.md)  
 
 ### 시뮬레이션  

@@ -4,17 +4,17 @@ using namespace std;
 
 int n, m;
 set<int> s;
-int arr[7];
+int arr[8];
 
-void func(int k) {
+void func(int k, int pre) {
 	if (k == m) {
 		for (int i = 0; i < m; i++) cout << arr[i] << ' ';
 		cout << endl;
 		return;
 	}
-	for (auto e : s) {
-		arr[k] = e;
-		func(k + 1);
+	for (auto it = pre == 0 ? s.begin() : s.find(pre); it != s.end(); it++) {
+		arr[k] = *it;
+		func(k + 1, *it);
 	}
 }
 
@@ -27,7 +27,7 @@ int main() {
 		cin >> x;
 		s.insert(x);
 	}
-	func(0);
+	func(0, 0);
 
 	return 0;
 }
