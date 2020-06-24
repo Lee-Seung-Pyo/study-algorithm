@@ -3,25 +3,23 @@
 #define X_MAX 1000
 using namespace std;
 
-vector<bool> isPrime(X_MAX + 1, true);
-
 int main() {
+	auto start = clock();
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	isPrime[1] = false;
-	for (int i = 2; i * i <= X_MAX; i++) {
-		if (!isPrime[i]) continue;
-		for (int j = i * i; j <= X_MAX; j += i) isPrime[j] = false;
+	int st, en;
+	cin >> st >> en;
+	if (st == 1) st = 2;
+	for (int i = st; i <= en; i++) {
+		bool isPrime = true;
+		for (int j = 2; j * j <= i; j++) {
+			if (i % j) continue;
+			isPrime = false;
+			break;
+		}
+		if (isPrime) cout << i << endl;
 	}
-	int n;
-	cin >> n;
-	int cnt = 0;
-	while (n--) {
-		int x;
-		cin >> x;
-		if (isPrime[x]) cnt++;
-	}
-	cout << cnt;
-
+	auto end = clock();
+	cout << end - start << endl;
 	return 0;
 }

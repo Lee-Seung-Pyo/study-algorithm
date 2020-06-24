@@ -74,6 +74,7 @@ for preparing 'coding test'
 [BOJ11051 이항 계수 2](/src/BOJ11051.md)  
 [BOJ1676 팩토리얼 0의 개수](/src/BOJ1676.md)  
 [BOJ1978 소수 찾기](/src/BOJ1978.md) - 소수 판정법  
+[BOJ1929 소수 구하기](/src/BOJ1929.md)  
 
 ### 이분 탐색  
 [BOJ1920 수 찾기](/src/BOJ1920.md)  
