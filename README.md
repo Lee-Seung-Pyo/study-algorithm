@@ -64,6 +64,7 @@ for preparing 'coding test'
 [BOJ10610 30](/src/BOJ10610.md)  
 [BOJ11047 동전 0](/src/BOJ11047.md)  
 [BOJ1197 최소 스패닝 트리](/src/BOJ1197.md)  
+[BOJ10162 전자레인지](/src/BOJ10162.md)  
 
 ### 수학  
 [BOJ11653 소인수분해](/src/BOJ11653.md)  
