@@ -145,6 +145,7 @@ for preparing 'coding test'
 
 #### 힙  
 [BOJ1927 최소 힙](/src/BOJ1927.md)  
+[BOJ11279 최대 힙](/src/BOJ11279.md)  
 
 #### 트리  
 [BOJ1991 트리 순회](/src/BOJ1991.md)  
