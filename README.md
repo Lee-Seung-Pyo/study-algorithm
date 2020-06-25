@@ -81,6 +81,7 @@ for preparing 'coding test'
 [BOJ1920 수 찾기](/src/BOJ1920.md)  
 [BOJ10816 숫자 카드 2](/src/BOJ10816.md)  
 [BOJ10815 숫자 카드](/src/BOJ10815.md) - 이분탐색 함수(binary_search, lower_bound, upper_bound)  
+[BOJ1822 차집합](/src/BOJ1822.md)  
 
 ### 문자열 매칭 - KMP, Rabin-Karp  
 ##### KMP  
