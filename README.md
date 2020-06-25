@@ -144,12 +144,15 @@ for preparing 'coding test'
 [BOJ1021 회전하는 큐](/src/BOJ1021.md)  
 [BOJ5430 AC](/src/BOJ5430.md)  
 
-#### 힙  
+#### 힙 - priority_queue  
 [BOJ1927 최소 힙](/src/BOJ1927.md)  
 [BOJ11279 최대 힙](/src/BOJ11279.md)  
 
 #### 트리  
 [BOJ1991 트리 순회](/src/BOJ1991.md)  
+
+#### 이진검색트리 - Set, Map  
+[BOJ7785 - 회사에 있는 사람](/src/BOJ7785) - Set 사용  
 
 
 ## C++ STL 컨테이너  
