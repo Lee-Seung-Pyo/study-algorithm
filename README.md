@@ -73,13 +73,14 @@ for preparing 'coding test'
 [BOJ11050 이항 계수 1](/src/BOJ11050.md)  
 [BOJ11051 이항 계수 2](/src/BOJ11051.md)  
 [BOJ1676 팩토리얼 0의 개수](/src/BOJ1676.md)  
-[BOJ1978 소수 찾기](/src/BOJ1978.md) - 소수 판정법  
+[BOJ1978 소수 찾기](/src/BOJ1978.md) - 소수 판정법(에라토스테네스의 체)  
 [BOJ1929 소수 구하기](/src/BOJ1929.md)  
 [BOJ15894 수학은 체육과목 입니다](/src/BOJ15894.md)  
 
 ### 이분 탐색  
 [BOJ1920 수 찾기](/src/BOJ1920.md)  
 [BOJ10816 숫자 카드 2](/src/BOJ10816.md)  
+[BOJ10815 숫자 카드](/src/BOJ10815.md) - 이분탐색 함수(binary_search, lower_bound, upper_bound)  
 
 ### 문자열 매칭 - KMP, Rabin-Karp  
 ##### KMP  
@@ -173,7 +174,7 @@ priority_queue<int, vector<int>, greater<int>> pq; // 최소 힙
 sort  
 max, min, max_element, min_element  
 fill  
-binary_search, lower_bound, upper_bound  
+binary_search, lower_bound, upper_bound - 이분 탐색 ([참고](/src/BOJ10815.md))  
 next_permutation, prev_permutation  
 
 #### \<climits> (\<limits.h>)  
