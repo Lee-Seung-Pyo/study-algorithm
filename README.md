@@ -17,6 +17,7 @@ for preparing 'coding test'
 [BOJ7562 나이트의 이동](/src/BOJ7562.md)  
 [BOJ2606 바이러스](/src/BOJ2606.md)  
 [BOJ5567 결혼식](/src/BOJ5567.md)  
+[BOJ11725 트리의 부모 찾기](/src/BOJ11725.md)  
 
 ### 재귀  
 [BOJ1629 곱셈](/src/BOJ1629.md)  
@@ -152,6 +153,7 @@ for preparing 'coding test'
 
 #### 트리  
 [BOJ1991 트리 순회](/src/BOJ1991.md)  
+[BOJ11725 트리의 부모 찾기](/src/BOJ11725.md)  
 
 #### 이진검색트리 - Set, Map  
 [BOJ7785 회사에 있는 사람](/src/BOJ7785.md) - Set 사용  
