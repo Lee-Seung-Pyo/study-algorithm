@@ -92,7 +92,8 @@ for preparing 'coding test'
 [BOJ1786 찾기](/src/BOJ1786.md)  
 
 ### 위상 정렬  
-[BOJ2252 줄 세우기](/src/BOJ2252.md)  
+[BOJ2252 줄 세우기](/src/BOJ2252.md) - 위상정렬  
+[BOJ2623 음악프로그램](/src/BOJ2623.md)  
 
 ### 최소 신장 트리 - Kruskal, Prim  
 ##### Kruskal  
