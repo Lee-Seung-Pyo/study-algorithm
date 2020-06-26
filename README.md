@@ -15,6 +15,7 @@ for preparing 'coding test'
 [BOJ9466 텀 프로젝트](/src/BOJ9466.md) - 사이클 찾기  
 [BOJ2583 영역 구하기](/src/BOJ2583.md)  
 [BOJ7562 나이트의 이동](/src/BOJ7562.md)  
+[BOJ2606 바이러스](/src/BOJ2606.md)  
 
 ### 재귀  
 [BOJ1629 곱셈](/src/BOJ1629.md)  
@@ -152,7 +153,7 @@ for preparing 'coding test'
 [BOJ1991 트리 순회](/src/BOJ1991.md)  
 
 #### 이진검색트리 - Set, Map  
-[BOJ7785 - 회사에 있는 사람](/src/BOJ7785) - Set 사용  
+[BOJ7785 회사에 있는 사람](/src/BOJ7785.md) - Set 사용  
 
 
 ## C++ STL 컨테이너  
