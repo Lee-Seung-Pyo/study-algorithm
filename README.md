@@ -16,6 +16,7 @@ for preparing 'coding test'
 [BOJ2583 영역 구하기](/src/BOJ2583.md)  
 [BOJ7562 나이트의 이동](/src/BOJ7562.md)  
 [BOJ2606 바이러스](/src/BOJ2606.md)  
+[BOJ5567 결혼식](/src/BOJ5567.md)  
 
 ### 재귀  
 [BOJ1629 곱셈](/src/BOJ1629.md)  
