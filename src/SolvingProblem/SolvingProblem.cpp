@@ -2,45 +2,59 @@
 #define endl '\n'
 using namespace std;
 
-vector<int> outdeg[1001];
-int indeg[1001];
-vector<int> ans;
+int n;
+string pic[100];
+int vis[100][100];
+int dx[4] = { -1,1,0,0 };
+int dy[4] = { 0,0,-1,1 };
+
+void bfs(int x, int y) {
+	char color = pic[x][y];
+	queue<pair<int, int>> q;
+	q.push({ x,y });
+	vis[x][y] = 1;
+	while (!q.empty()) {
+		auto cur = q.front(); q.pop();
+		for (int i = 0; i < 4; i++) {
+			int nx = cur.first + dx[i], ny = cur.second + dy[i];
+			if (nx < 0 || nx >= n || ny < 0 || ny >= n) continue;
+			if (pic[nx][ny] == color && vis[nx][ny] == 0) {
+				q.push({ nx,ny });
+				vis[nx][ny] = 1;
+			}
+		}
+	}
+}
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	int n, m;
-	cin >> n >> m;
-	while (m--) {
-		int k;
-		cin >> k;
-		int pre;
-		cin >> pre;
-		while (--k) {
-			int cur;
-			cin >> cur;
-			outdeg[pre].push_back(cur);
-			indeg[cur]++;
-			pre = cur;
+	cin >> n;
+	for (int i = 0; i < n; i++) cin >> pic[i];
+	int cnt = 0;
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			if (vis[i][j]) continue;
+			bfs(i, j);
+			cnt++;
 		}
 	}
-	queue<int> q;
-	for (int i = 1; i <= n; i++) {
-		if (indeg[i] == 0) q.push(i);
-	}
-	while (!q.empty()) {
-		int cur = q.front(); q.pop();
-		ans.push_back(cur);
-		for (auto nxt : outdeg[cur]) {
-			if (--indeg[nxt]) continue;
-			q.push(nxt);
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			if (pic[i][j] == 'G') pic[i][j] = 'R';
 		}
 	}
-	if (ans.size() != n) {
-		cout << 0;
-		return 0;
+	cout << cnt << ' ';
+	cnt = 0;
+	for (int i = 0; i < n; i++) fill(vis[i], vis[i] + n, 0);
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			if (vis[i][j]) continue;
+			bfs(i, j);
+			cnt++;
+		}
 	}
-	for (auto e : ans) cout << e << endl;
+	cout << cnt;
 
 	return 0;
 }

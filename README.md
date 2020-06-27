@@ -18,6 +18,7 @@ for preparing 'coding test'
 [BOJ2606 바이러스](/src/BOJ2606.md)  
 [BOJ5567 결혼식](/src/BOJ5567.md)  
 [BOJ11725 트리의 부모 찾기](/src/BOJ11725.md)  
+[BOJ10026 적록색약](/src/BOJ10026.md)  
 
 ### 재귀  
 [BOJ1629 곱셈](/src/BOJ1629.md)  
