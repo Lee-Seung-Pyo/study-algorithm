@@ -64,6 +64,7 @@ for preparing 'coding test'
 [BOJ2293 동전 1](/src/BOJ2293.md)  
 [BOJ11051 이항 계수 2](/src/BOJ11051.md)  
 [BOJ9095 1, 2, 3 더하기](/src/BOJ9095.md)  
+[BOJ2193 이친수](/src/BOJ2193.md)  
 
 ### 그리디
 [BOJ10610 30](/src/BOJ10610.md)  
