@@ -46,9 +46,13 @@ for preparing 'coding test'
 [BOJ15666 N과 M (12)](/src/BOJ15666.md)  
 [BOJ9663 N-Queen](/src/BOJ9663.md)  
 [BOJ6603 로또](/src/BOJ6603.md)  
+[BOJ14889 스타트와 링크](/src/BOJ14889.md)  
 
-### 시뮬레이션  
+### 시뮬레이션/구현  
 [BOJ1182 부분수열의 합](/src/BOJ1182.md)  
+[BOJ10871 X보다 작은 수](/src/BOJ10871.md)  
+[BOJ2504 괄호의 값](/src/BOJ2504.md)  
+[BOJ1547 공](/src/BOJ1547.md)  
 
 ### 정렬  
 [BOJ11728 배열 합치기](/src/BOJ11728.md)  
@@ -111,10 +115,6 @@ for preparing 'coding test'
 ##### Dijkstra  
 [BOJ1753 최단경로](/src/BOJ1753.md)  
 [BOJ11779 최소비용 구하기 2](/src/BOJ11779.md)  
-
-### 구현  
-[BOJ10871 X보다 작은 수](/src/BOJ10871.md)  
-[BOJ2504 괄호의 값](/src/BOJ2504.md)  
 
 
 ## 자료구조
