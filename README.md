@@ -45,6 +45,7 @@ for preparing 'coding test'
 [BOJ15665 N과 M (11)](/src/BOJ15665.md)  
 [BOJ15666 N과 M (12)](/src/BOJ15666.md)  
 [BOJ9663 N-Queen](/src/BOJ9663.md)  
+[BOJ6603 로또](/src/BOJ6603.md)  
 
 ### 시뮬레이션  
 [BOJ1182 부분수열의 합](/src/BOJ1182.md)  

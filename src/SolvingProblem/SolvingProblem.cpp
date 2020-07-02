@@ -2,18 +2,24 @@
 #define endl '\n'
 using namespace std;
 
-pair<long long, long long> dp[91]; //(n자리 이친수가 0으로 끝나는 개수, 1로 끝나는 개수)
+int arr[12];
+int c[12] = { 1,1,1,1,1,1, };
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	int n;
-	cin >> n;
-	dp[1] = { 0,1 };
-	dp[2] = { 1,0 };
-	for (int i = 3; i <= n; i++) {
-		dp[i] = { dp[i - 1].first + dp[i - 1].second, dp[i - 1].first };
+	while (true) {
+		int k;
+		cin >> k;
+		if (k == 0) return 0;
+		for (int i = 0; i < k; i++) cin >> arr[i];
+		do {
+			for (int i = 0; i < k; i++) {
+				if (c[i]) cout << arr[i] << ' ';
+			}
+			cout << endl;
+		} while (prev_permutation(c, c + k));
+		cout << endl;
 	}
-	cout << dp[n].first + dp[n].second;
 	return 0;
 }
