@@ -64,6 +64,7 @@ for preparing 'coding test'
 [BOJ1463 1로 만들기](/src/BOJ1463.md)  
 [BOJ1149 RGB거리](/src/BOJ1149.md)  
 [BOJ11726 2×n 타일링](/src/BOJ11726.md)  
+[BOJ11727 2xn 타일링 2](/src/BOJ11727.md)  
 [BOJ1912 연속합](/src/BOJ1912.md)  
 [BOJ11053 가장 긴 증가하는 부분 수열](/src/BOJ11053.md)  
 [BOJ2293 동전 1](/src/BOJ2293.md)  
