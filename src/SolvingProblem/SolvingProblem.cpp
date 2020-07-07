@@ -2,27 +2,22 @@
 #define endl '\n'
 using namespace std;
 
-int cumul[301][301];
+int T[16];
+int P[16];
+int dp[16];
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	int n, m;
-	cin >> n >> m;
+	int n;
+	cin >> n;
+	for (int i = 1; i <= n; i++) cin >> T[i] >> P[i];
 	for (int i = 1; i <= n; i++) {
-		for (int j = 1; j <= m; j++) {
-			int input;
-			cin >> input;
-			cumul[i][j] = input + cumul[i - 1][j] + cumul[i][j - 1] - cumul[i - 1][j - 1];
-		}
+		if (i + T[i] - 1 <= n)
+			dp[i + T[i] - 1] = max(dp[i + T[i] - 1], dp[i - 1] + P[i]);
+		dp[i] = max(dp[i], dp[i - 1]);
 	}
-	int k;
-	cin >> k;
-	while (k--) {
-		int i, j, x, y;
-		cin >> i >> j >> x >> y;
-		cout << cumul[x][y] - cumul[x][j - 1] - cumul[i - 1][y] + cumul[i - 1][j - 1] << endl;
-	}
+	cout << dp[n];
 
 	return 0;
 }
