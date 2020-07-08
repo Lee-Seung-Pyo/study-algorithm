@@ -31,6 +31,7 @@ for preparing 'coding test'
 [BOJ1992 쿼드트리](/src/BOJ1992.md)  
 [BOJ17478 재귀함수가 뭔가요?](/src/BOJ17478.md)  
 [BOJ16505 별](/src/BOJ16505.md)  
+[BOJ5904 Moo 게임](/src/BOJ5904.md)  
 
 ### 백트래킹  
 [BOJ15649 N과 M (1)](/src/BOJ15649.md)  

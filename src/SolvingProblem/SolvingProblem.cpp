@@ -2,43 +2,27 @@
 #define endl '\n'
 using namespace std;
 
-string board[1000];
-bool vis[1000][1000][2];
-int dx[4] = { -1,1,0,0 };
-int dy[4] = { 0,0,-1,1 };
+int L[29] = { 3 };
+
+char recur(int x) {
+	if (x == 1) return 'm';
+	if (x <= 3) return 'o';
+	int i = 1;
+	for (; L[i] < x; i++);
+	x -= L[i - 1];
+	if (x == 1) return 'm';
+	x -= i + 3;
+	if (x <= 0) return 'o';
+	return recur(x);
+}
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	int n, m;
-	cin >> n >> m;
-	for (int i = 0; i < n; i++) cin >> board[i];
-	queue<tuple<int, int, int, bool>> q; //x,y,cnt,wall
-	q.push({ 0,0,1,0 });
-	vis[0][0][0] = 1, vis[0][0][1] = 1;
-	while (!q.empty()) {
-		int x, y, cnt, isused;
-		tie(x, y, cnt, isused) = q.front(); q.pop();
-		if (x == n - 1 && y == m - 1) {
-			cout << cnt;
-			return 0;
-		}
-		for (int i = 0; i < 4; i++) {
-			int nx = x + dx[i], ny = y + dy[i];
-			if (nx < 0 || nx >= n || ny < 0 || ny >= m || vis[nx][ny][isused]) continue;
-			if (board[nx][ny] == '0') {
-				q.push({ nx,ny,cnt + 1,isused });
-				vis[nx][ny][1] = 1;
-				if (!isused) vis[nx][ny][0] = 1;
-				continue;
-			}
-			if (!isused) {
-				q.push({ nx,ny,cnt + 1,1 });
-				vis[nx][ny][1] = 1;
-			}
-		}
-	}
-	cout << -1;
+	for (int i = 1; i < 29; i++) L[i] = L[i - 1] * 2 + i + 3;
+	int n;
+	cin >> n;
+	cout << recur(n);
 
 	return 0;
 }
