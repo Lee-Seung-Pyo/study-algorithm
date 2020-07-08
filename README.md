@@ -20,6 +20,7 @@ for preparing 'coding test'
 [BOJ11725 트리의 부모 찾기](/src/BOJ11725.md)  
 [BOJ10026 적록색약](/src/BOJ10026.md)  
 [BOJ2468 안전 영역](/src/BOJ2468.md)  
+[BOJ2206 벽 부수고 이동하기](/src/BOJ2206.md)  
 
 ### 재귀  
 [BOJ1629 곱셈](/src/BOJ1629.md)  
