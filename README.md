@@ -95,6 +95,7 @@ for preparing 'coding test'
 [BOJ1929 소수 구하기](/src/BOJ1929.md)  
 [BOJ15894 수학은 체육과목 입니다](/src/BOJ15894.md)  
 [BOJ9613 GCD 합](/src/BOJ9613.md) - 최대공약수 구하기(유클리드 호제법)  
+[BOJ6359 만취한 상범](/src/BOJ6359.md)  
 
 ### 이분 탐색  
 [BOJ1920 수 찾기](/src/BOJ1920.md)  
