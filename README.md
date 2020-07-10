@@ -97,6 +97,7 @@ for preparing 'coding test'
 [BOJ15894 수학은 체육과목 입니다](/src/BOJ15894.md)  
 [BOJ9613 GCD 합](/src/BOJ9613.md) - 최대공약수 구하기(유클리드 호제법)  
 [BOJ6359 만취한 상범](/src/BOJ6359.md)  
+[BOJ2839 설탕 배달](/src/BOJ2839.md)  
 
 ### 이분 탐색  
 [BOJ1920 수 찾기](/src/BOJ1920.md)  
@@ -121,6 +122,7 @@ for preparing 'coding test'
 ##### Floyd  
 [BOJ11404 플로이드](/src/BOJ11404.md)  
 [BOJ11780 플로이드 2](/src/BOJ11780.md)  
+[BOJ11403 경로 찾기](/src/BOJ11403.md)  
 ##### Dijkstra  
 [BOJ1753 최단경로](/src/BOJ1753.md)  
 [BOJ11779 최소비용 구하기 2](/src/BOJ11779.md)  
