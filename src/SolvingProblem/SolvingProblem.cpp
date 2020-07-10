@@ -5,30 +5,16 @@ using namespace std;
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	int n;
-	cin >> n;
-	int cnt_5 = 0, cnt_3 = 0;
-	while (n >= 5) {
-		n -= 5;
-		cnt_5++;
+	int e, s, m;
+	cin >> e >> s >> m;
+	int te = 1, ts = 1, tm = 1, year = 1;
+	while (te != e || ts != s || tm != m) {
+		te = te % 15 + 1;
+		ts = ts % 28 + 1;
+		tm = tm % 19 + 1;
+		year++;
 	}
-	while (n >= 3) {
-		n -= 3;
-		cnt_3++;
-	}
-	while (n) {
-		if (cnt_5 == 0) {
-			cout << -1;
-			return 0;
-		}
-		cnt_5--;
-		n += 5;
-		while (n >= 3) {
-			n -= 3;
-			cnt_3++;
-		}
-	}
-	cout << cnt_5 + cnt_3;
+	cout << year;
 
 	return 0;
 }
