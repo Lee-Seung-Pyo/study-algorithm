@@ -2,28 +2,39 @@
 #define endl '\n'
 using namespace std;
 
-int t[1000];
+string gear[4];
+int p[4];
+int turn[4];
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	int n, w, L;
-	cin >> n >> w >> L;
-	for (int i = 0; i < n; i++) cin >> t[i];
-	queue<int> q;
-	for (int i = 0; i < w; i++) q.push(0);
-	int idx = 0, sec = 0;
-	while (idx < n) {
-		sec++;
-		int leave = q.front(); q.pop();
-		L += leave;
-		if (L - t[idx] < 0) q.push(0);
-		else {
-			q.push(t[idx]);
-			L -= t[idx++];
+	for (int i = 0; i < 4; i++) cin >> gear[i];
+	int k;
+	cin >> k;
+	while (k--) {
+		int idx, c;
+		cin >> idx >> c;
+		turn[idx - 1] = -c;
+		for (int i = idx - 1; i > 0; i--) {
+			if (gear[i][(p[i] + 6) % 8] == gear[i - 1][(p[i - 1] + 2) % 8]) break;
+			turn[i - 1] = -turn[i];
+		}
+		for (int i = idx - 1; i < 3; i++) {
+			if (gear[i][(p[i] + 2) % 8] == gear[i + 1][(p[i + 1] + 6) % 8]) break;
+			turn[i + 1] = -turn[i];
+		}
+		for (int i = 0; i < 4; i++) {
+			p[i] = (p[i] + turn[i] + 8) % 8;
+			turn[i] = 0;
 		}
 	}
-	cout << sec + w;
+	int ans = 0, bi = 1;
+	for (int i = 0; i < 4; i++) {
+		ans += (gear[i][p[i]] - '0') * bi;
+		bi *= 2;
+	}
+	cout << ans;
 
 	return 0;
 }

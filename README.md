@@ -56,6 +56,7 @@
 [BOJ2504 괄호의 값](/src/BOJ2504.md)  
 [BOJ1547 공](/src/BOJ1547.md)  
 [BOJ13335 트럭](/src/BOJ13335.md)  
+[BOJ14891 톱니바퀴](/src/BOJ14891.md)  
 
 ### 정렬  
 [BOJ11728 배열 합치기](/src/BOJ11728.md)  
