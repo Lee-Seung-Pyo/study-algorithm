@@ -1,5 +1,4 @@
 # study-algorithm
-for preparing 'coding test'  
 환경: C++14, Visual Studio 2019 version 16.4 ~  
 
 ### 완전 탐색 - BFS, DFS
@@ -56,6 +55,7 @@ for preparing 'coding test'
 [BOJ10871 X보다 작은 수](/src/BOJ10871.md)  
 [BOJ2504 괄호의 값](/src/BOJ2504.md)  
 [BOJ1547 공](/src/BOJ1547.md)  
+[BOJ13335 트럭](/src/BOJ13335.md)  
 
 ### 정렬  
 [BOJ11728 배열 합치기](/src/BOJ11728.md)  
