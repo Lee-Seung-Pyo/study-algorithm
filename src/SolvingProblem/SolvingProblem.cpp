@@ -2,39 +2,50 @@
 #define endl '\n'
 using namespace std;
 
-string gear[4];
-int p[4];
-int turn[4];
+long long fact[21] = { 1 };
+int arr[20];
+bool isused[21];
+int n, p;
+
+void p1(long long k, int depth) {
+	if (depth > n) return;
+	int order = k / fact[n - depth];
+	for (int i = 1; i <= n; i++) {
+		if (isused[i]) continue;
+		if (!order--) {
+			arr[depth] = i;
+			isused[i] = true;
+			break;
+		}
+	}
+	p1(k % fact[n - depth], depth + 1);
+}
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	for (int i = 0; i < 4; i++) cin >> gear[i];
-	int k;
-	cin >> k;
-	while (k--) {
-		int idx, c;
-		cin >> idx >> c;
-		turn[idx - 1] = -c;
-		for (int i = idx - 1; i > 0; i--) {
-			if (gear[i][(p[i] + 6) % 8] == gear[i - 1][(p[i - 1] + 2) % 8]) break;
-			turn[i - 1] = -turn[i];
-		}
-		for (int i = idx - 1; i < 3; i++) {
-			if (gear[i][(p[i] + 2) % 8] == gear[i + 1][(p[i + 1] + 6) % 8]) break;
-			turn[i + 1] = -turn[i];
-		}
-		for (int i = 0; i < 4; i++) {
-			p[i] = (p[i] + turn[i] + 8) % 8;
-			turn[i] = 0;
-		}
+	cin >> n >> p;
+	for (int i = 1; i <= n; i++) fact[i] = fact[i - 1] * i;
+	if (p == 1) {
+		long long k;
+		cin >> k;
+		p1(k - 1, 1);
+		for (int i = 1; i <= n; i++) cout << arr[i] << ' ';
 	}
-	int ans = 0, bi = 1;
-	for (int i = 0; i < 4; i++) {
-		ans += (gear[i][p[i]] - '0') * bi;
-		bi *= 2;
+	else {
+		long long k = 0;
+		for (int i = 1; i <= n; i++) {
+			int cur;
+			cin >> cur;
+			isused[cur] = true;
+			int cnt = 0;
+			for (int j = 1; j < cur; j++) {
+				if (!isused[j]) cnt++;
+			}
+			k += cnt * fact[n - i];
+		}
+		cout << ++k;
 	}
-	cout << ans;
 
 	return 0;
 }
