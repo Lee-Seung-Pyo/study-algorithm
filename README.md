@@ -81,6 +81,7 @@
 [BOJ2167 2차원 배열의 합](/src/BOJ2167.md)  
 [BOJ14501 퇴사](/src/BOJ14501.md)  
 [BOJ1932 정수 삼각형](/src/BOJ1932.md)  
+[BOJ2156 포도주 시식](/src/BOJ2156.md)  
 
 ### 그리디
 [BOJ10610 30](/src/BOJ10610.md)  

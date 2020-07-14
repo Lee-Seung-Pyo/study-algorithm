@@ -2,30 +2,21 @@
 #define endl '\n'
 using namespace std;
 
-vector<int> tri[500];
+int p[10001];
+int dp[10001];
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
 	int n;
 	cin >> n;
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j <= i; j++) {
-			int input;
-			cin >> input;
-			tri[i].push_back(input);
-		}
+	for (int i = 1; i <= n; i++) cin >> p[i];
+	dp[1] = p[1];
+	dp[2] = p[1] + p[2];
+	for (int i = 3; i <= n; i++) {
+		dp[i] = max({ dp[i - 1], dp[i - 2] + p[i], dp[i - 3] + p[i - 1] + p[i] });
 	}
-	for (int i = 1; i < n; i++) {
-		tri[i][0] += tri[i - 1][0];
-		for (int j = 1; j < i; j++) {
-			tri[i][j] += max(tri[i - 1][j - 1], tri[i - 1][j]);
-		}
-		tri[i][i] += tri[i - 1][i - 1];
-	}
-	int mx = 0;
-	for (auto e : tri[n - 1]) mx = max(mx, e);
-	cout << mx;
+	cout << dp[n];
 
 	return 0;
 }
