@@ -2,43 +2,29 @@
 #define endl '\n'
 using namespace std;
 
-int s[8];
-int w[8];
-int n;
-int mx = 0;
-
-void recur(int cur) {
-	if (cur == n) {
-		int cnt = 0;
-		for (int i = 0; i < n; i++) {
-			if (s[i] <= 0) cnt++;
-		}
-		mx = max(mx, cnt);
-		return;
-	}
-	if (s[cur] <= 0) {
-		recur(cur + 1);
-		return;
-	}
-	bool flag = false;
-	for (int i = 0; i < n; i++) {
-		if (i == cur || s[i] <= 0) continue;
-		flag = true;
-		s[cur] -= w[i];
-		s[i] -= w[cur];
-		recur(cur + 1);
-		s[cur] += w[i];
-		s[i] += w[cur];
-	}
-	if (!flag) recur(cur + 1);
-}
+vector<int> tri[500];
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
+	int n;
 	cin >> n;
-	for (int i = 0; i < n; i++) cin >> s[i] >> w[i];
-	recur(0);
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j <= i; j++) {
+			int input;
+			cin >> input;
+			tri[i].push_back(input);
+		}
+	}
+	for (int i = 1; i < n; i++) {
+		tri[i][0] += tri[i - 1][0];
+		for (int j = 1; j < i; j++) {
+			tri[i][j] += max(tri[i - 1][j - 1], tri[i - 1][j]);
+		}
+		tri[i][i] += tri[i - 1][i - 1];
+	}
+	int mx = 0;
+	for (auto e : tri[n - 1]) mx = max(mx, e);
 	cout << mx;
 
 	return 0;
