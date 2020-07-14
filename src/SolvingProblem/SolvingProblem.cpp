@@ -2,21 +2,24 @@
 #define endl '\n'
 using namespace std;
 
-int p[10001];
-int dp[10001];
+int dp[101][10];
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
 	int n;
 	cin >> n;
-	for (int i = 1; i <= n; i++) cin >> p[i];
-	dp[1] = p[1];
-	dp[2] = p[1] + p[2];
-	for (int i = 3; i <= n; i++) {
-		dp[i] = max({ dp[i - 1], dp[i - 2] + p[i], dp[i - 3] + p[i - 1] + p[i] });
+	fill_n(&dp[1][1], 9, 1);
+	for (int i = 2; i <= n; i++) {
+		dp[i][0] = dp[i - 1][1];
+		dp[i][9] = dp[i - 1][8];
+		for (int j = 1; j < 9; j++) {
+			dp[i][j] = (dp[i - 1][j - 1] + dp[i - 1][j + 1]) % 1'000'000'000;
+		}
 	}
-	cout << dp[n];
+	int ans = 0;
+	for (auto e : dp[n]) ans = (ans + e) % 1'000'000'000;
+	cout << ans;
 
 	return 0;
 }
