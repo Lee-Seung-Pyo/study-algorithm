@@ -87,6 +87,7 @@
 [BOJ9465 스티커](/src/BOJ9465.md)  
 [BOJ9461 파도반 수열](/src/BOJ9461.md)  
 [BOJ11057 오르막 수](/src/BOJ11057.md)  
+[BOJ2294 동전 2](/src/BOJ2294.md)  
 
 ### 그리디
 [BOJ10610 30](/src/BOJ10610.md)  
