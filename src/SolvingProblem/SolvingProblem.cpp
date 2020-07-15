@@ -2,21 +2,21 @@
 #define endl '\n'
 using namespace std;
 
-int dp[1001][1001];
+int dp[100'001];
+const int mx = 1'000'000;
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	int n, m;
-	cin >> n >> m;
-	for (int i = 1; i <= n; i++) {
-		for (int j = 1; j <= m; j++) {
-			int p;
-			cin >> p;
-			dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]) + p;
+	int n;
+	cin >> n;
+	fill(dp + 1, dp + n + 1, mx);
+	for (int i = 1; i * i <= n; i++) {
+		for (int j = i * i; j <= n; j++) {
+			dp[j] = min(dp[j], dp[j - i * i] + 1);
 		}
 	}
-	cout << dp[n][m];
+	cout << dp[n];
 
 	return 0;
 }

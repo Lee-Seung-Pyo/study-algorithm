@@ -89,6 +89,7 @@
 [BOJ11057 오르막 수](/src/BOJ11057.md)  
 [BOJ2294 동전 2](/src/BOJ2294.md)  
 [BOJ11048 이동하기](/src/BOJ11048.md)  
+[BOJ1699 제곱수의 합](/src/BOJ1699.md)  
 
 ### 그리디
 [BOJ10610 30](/src/BOJ10610.md)  
