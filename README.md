@@ -85,6 +85,7 @@
 [BOJ10844 쉬운 계단 수](/src/BOJ10844.md)  
 [BOJ11052 카드 구매하기](/src/BOJ11052.md)  
 [BOJ9465 스티커](/src/BOJ9465.md)  
+[BOJ9461 파도반 수열](/src/BOJ9461.md)  
 
 ### 그리디
 [BOJ10610 30](/src/BOJ10610.md)  
