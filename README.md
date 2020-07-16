@@ -93,6 +93,7 @@
 [BOJ2133 타일 채우기](/src/BOJ2133.md)  
 [BOJ11722 가장 긴 감소하는 부분 수열](/src/BOJ11722.md)  
 [BOJ1890 점프](/src/BOJ1890.md)  
+[BOJ1965 상자넣기](/src/BOJ1965.md)  
 
 ### 그리디
 [BOJ10610 30](/src/BOJ10610.md)  
