@@ -2,139 +2,60 @@
 #define endl '\n'
 using namespace std;
 
-int n, m, k;
-int board[8][8];
-pair<int, int> cctv[8];
-int ans = INT_MAX;
+int n, m, k, r, c;
+int S[40][40];
+int s[10][10];
 
-//d = 0: 12시, 1: 3시, 2: 6시, 3: 9시
-void myfill(int x, int y, int d) {
-	switch (d) {
-	case 0:
-		while (x >= 0 && board[x][y] != 6) {
-			if (board[x][y] <= 0) board[x][y]--;
-			x--;
-		}
-		break;
-	case 1:
-		while (y < m && board[x][y] != 6) {
-			if (board[x][y] <= 0) board[x][y]--;
-			y++;
-		}
-		break;
-	case 2:
-		while (x < n && board[x][y] != 6) {
-			if (board[x][y] <= 0) board[x][y]--;
-			x++;
-		}
-		break;
-	case 3:
-		while (y >= 0 && board[x][y] != 6) {
-			if (board[x][y] <= 0) board[x][y]--;
-			y--;
-		}
-		break;
-	}
+bool pastable(int x, int y) {
+	for (int i = 0; i < r; i++)
+		for (int j = 0; j < c; j++)
+			if (S[x + i][y + j] && s[i][j]) return false;
+	for (int i = 0; i < r; i++)
+		for (int j = 0; j < c; j++)
+			S[x + i][y + j] += s[i][j];
+	return true;
 }
 
-void unfill(int x, int y, int d) {
-	switch (d) {
-	case 0:
-		while (x >= 0 && board[x][y] != 6) {
-			if (board[x][y] < 0) board[x][y]++;
-			x--;
-		}
-		break;
-	case 1:
-		while (y < m && board[x][y] != 6) {
-			if (board[x][y] < 0) board[x][y]++;
-			y++;
-		}
-		break;
-	case 2:
-		while (x < n && board[x][y] != 6) {
-			if (board[x][y] < 0) board[x][y]++;
-			x++;
-		}
-		break;
-	case 3:
-		while (y >= 0 && board[x][y] != 6) {
-			if (board[x][y] < 0) board[x][y]++;
-			y--;
-		}
-		break;
-	}
-}
-
-void recur(int t) {
-	if (t == k) {
-		int num = 0;
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < m; j++) {
-				if (!board[i][j]) num++;
-			}
-		}
-		ans = min(ans, num);
-		return;
-	}
-	int x = cctv[t].first, y = cctv[t].second;
-	switch (board[x][y]) {
-	case 1:
-		for (int i = 0; i < 4; i++) {
-			myfill(x, y, i);
-			recur(t + 1);
-			unfill(x, y, i);
-		}
-		break;
-	case 2:
-		for (int i = 0; i < 2; i++) {
-			myfill(x, y, i);
-			myfill(x, y, i + 2);
-			recur(t + 1);
-			unfill(x, y, i);
-			unfill(x, y, i + 2);
-		}
-		break;
-	case 3:
-		for (int i = 0; i < 4; i++) {
-			myfill(x, y, i);
-			myfill(x, y, (i + 1) % 4);
-			recur(t + 1);
-			unfill(x, y, i);
-			unfill(x, y, (i + 1) % 4);
-		}
-		break;
-	case 4:
-		for (int i = 0; i < 4; i++) {
-			myfill(x, y, i);
-			myfill(x, y, (i + 1) % 4);
-			myfill(x, y, (i + 2) % 4);
-			recur(t + 1);
-			unfill(x, y, i);
-			unfill(x, y, (i + 1) % 4);
-			unfill(x, y, (i + 2) % 4);
-		}
-		break;
-	case 5:
-		for (int i = 0; i < 4; i++) myfill(x, y, i);
-		recur(t + 1);
-		for (int i = 0; i < 4; i++) unfill(x, y, i);
-		break;
-	}
+void rotate() {
+	int tmp[10][10];
+	for (int i = 0; i < r; i++)
+		for (int j = 0; j < c; j++)
+			tmp[i][j] = s[i][j];
+	swap(r, c);
+	for (int i = 0; i < r; i++)
+		for (int j = 0; j < c; j++)
+			s[i][j] = tmp[c - j - 1][i];
 }
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	cin >> n >> m;
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < m; j++) {
-			cin >> board[i][j];
-			if (board[i][j] != 0 && board[i][j] != 6) cctv[k++] = { i,j };
+	cin >> n >> m >> k;
+	while (k--) {
+		cin >> r >> c;
+		for (int i = 0; i < r; i++)
+			for (int j = 0; j < c; j++)
+				cin >> s[i][j];
+		bool is_pasted = false;
+		for (int t = 0; t < 4; t++) {
+			for (int i = 0; i <= n - r; i++) {
+				for (int j = 0; j <= m - c; j++) {
+					if (pastable(i, j)) {
+						is_pasted = true;
+						break;
+					}
+				}
+				if (is_pasted) break;
+			}
+			if (is_pasted) break;
+			rotate();
 		}
 	}
-	recur(0);
-	cout << ans;
+	int cnt = 0;
+	for (int i = 0; i < n; i++)
+		for (int j = 0; j < m; j++)
+			cnt += S[i][j];
+	cout << cnt;
 
 	return 0;
 }
