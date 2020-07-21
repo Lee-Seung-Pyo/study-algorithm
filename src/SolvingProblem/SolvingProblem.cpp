@@ -2,28 +2,26 @@
 #define endl '\n'
 using namespace std;
 
-vector<int> C[29];
+vector<bool> is_vip(41, false);
+int dp[41];
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	int n, m, k;
-	cin >> n >> m >> k;
-	C[0].push_back(1);
-	for (int i = 1; i <= n + m - 2; i++) {
-		C[i].push_back(1);
-		for (int j = 1; j < i; j++) C[i].push_back(C[i - 1][j - 1] + C[i - 1][j]);
-		C[i].push_back(1);
+	int n, m;
+	cin >> n >> m;
+	while (m--) {
+		int x;
+		cin >> x;
+		is_vip[x] = true;
 	}
-	if (!k) {
-		cout << C[n + m - 2][n - 1];
-		return 0;
+	dp[0] = 1;
+	dp[1] = 1;
+	for (int i = 2; i <= n; i++) {
+		if (is_vip[i] || is_vip[i - 1]) dp[i] = dp[i - 1];
+		else dp[i] = dp[i - 1] + dp[i - 2];
 	}
-	int x = (k - 1) / m, y = (k - 1) % m;
-	int first = C[x + y][x];
-	x = n - x - 1, y = m - y - 1;
-	int second = C[x + y][x];
-	cout << first * second;
+	cout << dp[n];
 
 	return 0;
 }

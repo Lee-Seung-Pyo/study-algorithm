@@ -102,6 +102,7 @@
 [BOJ2011 암호코드](/src/BOJ2011.md)  
 [BOJ1904 01타일](/src/BOJ1904.md)  
 [BOJ10164 격자상의 경로](/src/BOJ10164.md)  
+[BOJ2302 극장 좌석](/src/BOJ2302.md)  
 
 ### 그리디
 [BOJ10610 30](/src/BOJ10610.md)  
