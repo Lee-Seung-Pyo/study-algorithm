@@ -2,26 +2,31 @@
 #define endl '\n'
 using namespace std;
 
-vector<bool> is_vip(41, false);
-int dp[41];
+vector<bool> dp[2];
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	int n, m;
-	cin >> n >> m;
-	while (m--) {
-		int x;
-		cin >> x;
-		is_vip[x] = true;
+	int n, s, m;
+	cin >> n >> s >> m;
+	for (int i = 0; i < 2; i++) dp[i].resize(m + 1, false);
+	dp[0][s] = true;
+	int cur = 0;
+	for (int i = 1; i <= n; i++) {
+		int v;
+		cin >> v;
+		cur = !cur;
+		for (int j = 0; j <= m; j++)
+			dp[cur][j] = j - v >= 0 && dp[!cur][j - v] || j + v <= m && dp[!cur][j + v];
 	}
-	dp[0] = 1;
-	dp[1] = 1;
-	for (int i = 2; i <= n; i++) {
-		if (is_vip[i] || is_vip[i - 1]) dp[i] = dp[i - 1];
-		else dp[i] = dp[i - 1] + dp[i - 2];
+	int ans = -1;
+	for (int i = m; i >= 0; i--) {
+		if (dp[cur][i]) {
+			ans = i;
+			break;
+		}
 	}
-	cout << dp[n];
+	cout << ans;
 
 	return 0;
 }
