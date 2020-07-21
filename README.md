@@ -112,6 +112,7 @@
 [BOJ10162 전자레인지](/src/BOJ10162.md)  
 [BOJ2457 공주님의 정원](/src/BOJ2457.md)  
 [BOJ1541 잃어버린 괄호](/src/BOJ1541.md)  
+[BOJ1543 문서 검색](/src/BOJ1543.md)  
 
 ### 수학  
 [BOJ11653 소인수분해](/src/BOJ11653.md)  
