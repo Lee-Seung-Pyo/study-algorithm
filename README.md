@@ -62,6 +62,7 @@
 [BOJ14891 톱니바퀴](/src/BOJ14891.md)  
 [BOJ15683 감시](/src/BOJ15683.md)  
 [BOJ18808 스티커 붙이기](/src/BOJ18808.md)  
+[BOJ12100 2048 (Easy)](/src/BOJ12100.md)   
 
 ### 정렬  
 [BOJ11728 배열 합치기](/src/BOJ11728.md)  

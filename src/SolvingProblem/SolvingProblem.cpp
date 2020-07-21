@@ -2,60 +2,58 @@
 #define endl '\n'
 using namespace std;
 
-int n, m, k, r, c;
-int S[40][40];
-int s[10][10];
+int board[20][20];
+int n, ans;
 
-bool pastable(int x, int y) {
-	for (int i = 0; i < r; i++)
-		for (int j = 0; j < c; j++)
-			if (S[x + i][y + j] && s[i][j]) return false;
-	for (int i = 0; i < r; i++)
-		for (int j = 0; j < c; j++)
-			S[x + i][y + j] += s[i][j];
-	return true;
+void push(int before[20][20], int after[20][20]) {
+	for (int i = 0; i < n; i++)
+		for (int j = 0; j < n; j++)
+			after[i][j] = 0;
+	for (int i = 0; i < n; i++) {
+		int cur = 0;
+		for (int j = 0; j < n; j++) {
+			if (!before[i][j]) continue;
+			if (!after[i][cur]) after[i][cur] = before[i][j];
+			else if (after[i][cur] == before[i][j]) after[i][cur++] *= 2;
+			else after[i][++cur] = before[i][j];
+		}
+	}
 }
 
-void rotate() {
-	int tmp[10][10];
-	for (int i = 0; i < r; i++)
-		for (int j = 0; j < c; j++)
-			tmp[i][j] = s[i][j];
-	swap(r, c);
-	for (int i = 0; i < r; i++)
-		for (int j = 0; j < c; j++)
-			s[i][j] = tmp[c - j - 1][i];
+void rotate(int arr[20][20]) {
+	int tmp[20][20] = {};
+	for (int i = 0; i < n; i++)
+		for (int j = 0; j < n; j++)
+			tmp[i][j] = arr[i][j];
+	for (int i = 0; i < n; i++)
+		for (int j = 0; j < n; j++)
+			arr[i][j] = tmp[n - j - 1][i];
+}
+
+void recur(int before[20][20], int k) {
+	if (k == 5) {
+		for (int i = 0; i < n; i++)
+			for (int j = 0; j < n; j++)
+				ans = max(ans, before[i][j]);
+		return;
+	}
+	int after[20][20] = {};
+	for (int i = 0; i < 4; i++) {
+		push(before, after);
+		recur(after, k + 1);
+		rotate(before);
+	}
 }
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	cin >> n >> m >> k;
-	while (k--) {
-		cin >> r >> c;
-		for (int i = 0; i < r; i++)
-			for (int j = 0; j < c; j++)
-				cin >> s[i][j];
-		bool is_pasted = false;
-		for (int t = 0; t < 4; t++) {
-			for (int i = 0; i <= n - r; i++) {
-				for (int j = 0; j <= m - c; j++) {
-					if (pastable(i, j)) {
-						is_pasted = true;
-						break;
-					}
-				}
-				if (is_pasted) break;
-			}
-			if (is_pasted) break;
-			rotate();
-		}
-	}
-	int cnt = 0;
+	cin >> n;
 	for (int i = 0; i < n; i++)
-		for (int j = 0; j < m; j++)
-			cnt += S[i][j];
-	cout << cnt;
+		for (int j = 0; j < n; j++)
+			cin >> board[i][j];
+	recur(board, 0);
+	cout << ans;
 
 	return 0;
 }
