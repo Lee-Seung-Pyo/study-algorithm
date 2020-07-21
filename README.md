@@ -100,6 +100,7 @@
 [BOJ1965 상자넣기](/src/BOJ1965.md)  
 [BOJ1309 동물원](/src/BOJ1309.md)  
 [BOJ2011 암호코드](/src/BOJ2011.md)  
+[BOJ1904 01타일](/src/BOJ1904.md)  
 
 ### 그리디
 [BOJ10610 30](/src/BOJ10610.md)  
