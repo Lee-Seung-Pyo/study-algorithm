@@ -129,6 +129,7 @@
 [BOJ6359 만취한 상범](/src/BOJ6359.md)  
 [BOJ2839 설탕 배달](/src/BOJ2839.md)  
 [BOJ1476 날짜 계산](/src/BOJ1476.md)  
+[BOJ1145 적어도 대부분의 배수](/src/BOJ1145.md)  
 
 ### 이분 탐색  
 [BOJ1920 수 찾기](/src/BOJ1920.md)  
