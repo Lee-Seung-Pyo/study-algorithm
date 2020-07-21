@@ -130,6 +130,7 @@
 [BOJ2839 설탕 배달](/src/BOJ2839.md)  
 [BOJ1476 날짜 계산](/src/BOJ1476.md)  
 [BOJ1145 적어도 대부분의 배수](/src/BOJ1145.md)  
+[BOJ15736 청기 백기](/src/BOJ15736.md)  
 
 ### 이분 탐색  
 [BOJ1920 수 찾기](/src/BOJ1920.md)  
