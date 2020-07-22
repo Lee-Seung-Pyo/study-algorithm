@@ -2,24 +2,26 @@
 #define endl '\n'
 using namespace std;
 
-int gcd(int a, int b) {
-	if (a == 0) return b;
-	return gcd(b % a, a);
-}
-
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	int n;
-	cin >> n;
-	int x;
-	cin >> x;
-	while (--n) {
-		int y;
-		cin >> y;
-		int d = gcd(x, y);
-		cout << x / d << '/' << y / d << endl;
-	}
+	int n, m;
+	cin >> n >> m;
+	int cnt[2] = {};
+	int tmp = n;
+	while (tmp /= 2) cnt[0] += tmp;
+	tmp = n;
+	while (tmp /= 5) cnt[1] += tmp;
+	tmp = m;
+	while (tmp /= 2) cnt[0] -= tmp;
+	tmp = m;
+	while (tmp /= 5) cnt[1] -= tmp;
+	tmp = n - m;
+	while (tmp /= 2) cnt[0] -= tmp;
+	tmp = n - m;
+	while (tmp /= 5) cnt[1] -= tmp;
+
+	cout << min(cnt[0], cnt[1]);
 
 	return 0;
 }
