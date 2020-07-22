@@ -2,26 +2,21 @@
 #define endl '\n'
 using namespace std;
 
+int arr[10000];
+
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
 	int n, m;
 	cin >> n >> m;
-	int cnt[2] = {};
-	int tmp = n;
-	while (tmp /= 2) cnt[0] += tmp;
-	tmp = n;
-	while (tmp /= 5) cnt[1] += tmp;
-	tmp = m;
-	while (tmp /= 2) cnt[0] -= tmp;
-	tmp = m;
-	while (tmp /= 5) cnt[1] -= tmp;
-	tmp = n - m;
-	while (tmp /= 2) cnt[0] -= tmp;
-	tmp = n - m;
-	while (tmp /= 5) cnt[1] -= tmp;
-
-	cout << min(cnt[0], cnt[1]);
+	for (int i = 0; i < n; i++) cin >> arr[i];
+	int sum = 0, cnt = 0;
+	for (int st = 0, en = 0; en < n; en++) {
+		sum += arr[en];
+		while (sum > m) sum -= arr[st++];
+		if (sum == m) cnt++;
+	}
+	cout << cnt;
 
 	return 0;
 }
