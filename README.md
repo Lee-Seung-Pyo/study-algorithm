@@ -142,6 +142,7 @@
 [BOJ1822 차집합](/src/BOJ1822.md)  
 [BOJ1764 듣보잡](/src/BOJ1764.md)  
 [BOJ2003 수들의 합 2](/src/BOJ2003.md)  
+[BOJ14921 용액 합성하기](/src/BOJ14921.md)  
 
 ### 문자열 매칭 - KMP, Rabin-Karp  
 ##### KMP  
