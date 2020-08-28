@@ -2,64 +2,79 @@
 #define endl '\n'
 using namespace std;
 
-int board[300][300];
-bool vis[300][300];
+int board[1000][1000];
+bool vis[1000][1000];
 int dx[4] = { -1,1,0,0 };
 int dy[4] = { 0,0,-1,1 };
+queue<tuple<int, int, int>> q;
 
-void bfs(int x, int y) {
-	queue<pair<int, int>> q;
-	q.push({ x,y });
-	vis[x][y] = 1;
-	while (!q.empty()) {
-		int cx, cy;
-		tie(cx, cy) = q.front(); q.pop();
-		for (int i = 0; i < 4; i++) {
-			int nx = cx + dx[i], ny = cy + dy[i];
-			if (vis[nx][ny]) continue;
-			if (board[nx][ny]) {
-				q.push({ nx,ny });
-				vis[nx][ny] = 1;
-				continue;
+void bfs() {
+	int w, h, x, y;
+	cin >> w >> h;
+	for (int i = 0; i < h; i++) fill(vis[i], vis[i] + w, false);
+	while (!q.empty()) q.pop();
+
+	for (int i = 0; i < h; i++) {
+		string s;
+		cin >> s;
+		for (int j = 0; j < w; j++) {
+			switch (s[j]) {
+			case '.':
+				board[i][j] = 0;
+				break;
+			case '#':
+				board[i][j] = -1;
+				break;
+			case '*':
+				board[i][j] = 1;
+				q.push({ i,j,1 });
+				break;
+			case '@':
+				board[i][j] = 0;
+				x = i;
+				y = j;
+				break;
 			}
-			if(board[cx][cy]) board[cx][cy]--;
 		}
 	}
+
+	while (!q.empty()) {
+		int cx, cy, cur;
+		tie(cx, cy, cur) = q.front(); q.pop();
+		for (int i = 0; i < 4; i++) {
+			int nx = cx + dx[i], ny = cy + dy[i];
+			if (nx < 0 || nx >= h || ny < 0 || ny >= w || board[nx][ny]) continue;
+			q.push({ nx,ny,cur + 1 });
+			board[nx][ny] = cur + 1;
+		}
+	}
+
+	q.push({ x,y,1 });
+	vis[x][y] = 1;
+	while (!q.empty()) {
+		int cx, cy, cur;
+		tie(cx, cy, cur) = q.front(); q.pop();
+		for (int i = 0; i < 4; i++) {
+			int nx = cx + dx[i], ny = cy + dy[i];
+			if (nx < 0 || nx >= h || ny < 0 || ny >= w) {
+				cout << cur << endl;
+				return;
+			}
+			if (vis[nx][ny] || board[nx][ny] && board[nx][ny] <= cur + 1) continue;
+			q.push({ nx,ny,cur + 1 });
+			vis[nx][ny] = 1;
+		}
+	}
+	cout << "IMPOSSIBLE" << endl;
+	return;
 }
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	int n, m;
-	cin >> n >> m;
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < m; j++) cin >> board[i][j];
-	}
-
-	int cnt = 0;
-	while (1) {
-		int bfs_cnt = 0;
-		for (int i = 0; i < n; i++) fill(vis[i], vis[i] + m, 0);
-
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < m; j++) {
-				if (board[i][j] && !vis[i][j]) {
-					if (bfs_cnt) { // 두덩이
-						cout << cnt;
-						return 0;
-					}
-					bfs(i, j);
-					bfs_cnt++;
-				}
-			}
-		}
-
-		if (!bfs_cnt) {
-			cout << 0;
-			return 0;
-		}
-		cnt++;
-	}
+	int tc;
+	cin >> tc;
+	while (tc--) bfs();
 
 	return 0;
 }

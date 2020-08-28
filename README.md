@@ -22,6 +22,7 @@
 [BOJ2206 벽 부수고 이동하기](./src/BOJ2206.md)  
 [BOJ6118 숨바꼭질](./src/BOJ6118.md)  
 [BOJ2573 빙산](./src/BOJ2573.md)  
+[BOJ5427 불](./src/BOJ5427.md)  
 
 ### 재귀  
 [BOJ1629 곱셈](./src/BOJ1629.md)  
